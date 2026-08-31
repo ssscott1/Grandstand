@@ -25,11 +25,11 @@ static host (Netlify, Vercel, Cloudflare Pages, GitHub Pages, S3).
 
 - **Free trial form** on every page (`#free-trial`), mobile sticky CTA bar, header CTA,
   click-to-call everywhere.
-- Forms have no backend yet: they open a pre-filled email to
-  `info@grandstandcrossfit.com.au`. To capture leads properly, create a form at
-  [formspree.io](https://formspree.io) (or Basin/Getform) and add
-  `data-endpoint="https://formspree.io/f/YOUR_ID"` to each `<form class="lead-form">`.
-  Even better: replace with your CRM/booking widget (Wodify/PushPress/TeamUp embed).
+- Forms are wired to **Netlify Forms** (`name="free-trial"`, honeypot spam filter).
+  Submissions appear in the Netlify dashboard → Forms; add email/Slack notifications
+  there so no lead sits unread. A `data-endpoint` attribute on any form overrides
+  this with a custom service (Formspree/CRM); with neither, forms fall back to a
+  pre-filled email to `info@grandstandcrossfit.com.au`.
 
 ## SEO / AI-search
 

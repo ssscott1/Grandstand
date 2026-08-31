@@ -51,7 +51,21 @@
       var data = new FormData(form);
       var endpoint = form.getAttribute("data-endpoint");
 
-      if (endpoint) {
+      if (!endpoint && form.hasAttribute("data-netlify")) {
+        fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: new URLSearchParams(data).toString()
+        })
+          .then(function (r) {
+            if (!r.ok) throw new Error("send failed");
+            form.reset();
+            show(msg, "ok", "You're in! We'll be in touch within one business day to lock in your free trial.");
+          })
+          .catch(function () {
+            show(msg, "err", "Something went wrong — call us on 0424 476 235 or email info@grandstandcrossfit.com.au.");
+          });
+      } else if (endpoint) {
         fetch(endpoint, { method: "POST", body: data, headers: { Accept: "application/json" } })
           .then(function (r) {
             if (!r.ok) throw new Error("send failed");
