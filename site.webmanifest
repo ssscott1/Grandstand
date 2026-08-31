@@ -1,0 +1,10 @@
+{
+  "name": "Grandstand CrossFit",
+  "short_name": "Grandstand",
+  "description": "CrossFit, Hyrox, weightlifting and group training in Perth. Great Culture. Grand Outcomes.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#141314",
+  "theme_color": "#00ADEF",
+  "icons": [{ "src": "/assets/img/favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}
