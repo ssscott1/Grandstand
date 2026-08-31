@@ -1,0 +1,61 @@
+# Netlify configuration — static site, no build step
+[build]
+  publish = "."
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+# Pretty URLs: /crossfit -> /crossfit.html
+[[redirects]]
+  from = "/crossfit"
+  to = "/crossfit.html"
+  status = 200
+[[redirects]]
+  from = "/hyrox"
+  to = "/hyrox.html"
+  status = 200
+[[redirects]]
+  from = "/weightlifting"
+  to = "/weightlifting.html"
+  status = 200
+[[redirects]]
+  from = "/group-training"
+  to = "/group-training.html"
+  status = 200
+[[redirects]]
+  from = "/personal-training"
+  to = "/personal-training.html"
+  status = 200
+[[redirects]]
+  from = "/kids"
+  to = "/kids.html"
+  status = 200
+[[redirects]]
+  from = "/programs"
+  to = "/programs.html"
+  status = 200
+[[redirects]]
+  from = "/timetable"
+  to = "/timetable.html"
+  status = 200
+[[redirects]]
+  from = "/pricing"
+  to = "/pricing.html"
+  status = 200
+[[redirects]]
+  from = "/about"
+  to = "/about.html"
+  status = 200
+[[redirects]]
+  from = "/contact"
+  to = "/contact.html"
+  status = 200
