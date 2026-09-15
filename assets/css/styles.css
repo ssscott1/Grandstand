@@ -150,6 +150,9 @@ section { padding: 84px 0; }
   display: none; color: var(--white); text-decoration: none; font-weight: 700; font-size: .92rem;
 }
 @media (min-width: 1080px) { .header-phone { display: inline-block; } }
+.nav-ig { display: inline-flex; align-items: center; color: #cfcecd; }
+.nav-ig svg { display: block; }
+.nav-ig:hover { color: var(--blue); }
 
 .nav-toggle {
   display: none; margin-left: auto; background: none; border: 0; cursor: pointer; padding: 10px;
