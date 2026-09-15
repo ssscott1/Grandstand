@@ -414,6 +414,8 @@ section { padding: 84px 0; }
 /* ---------- Coaches ---------- */
 .coach-card .card-media { aspect-ratio: 4/5; }
 .coach-role { color: var(--blue); font-weight: 800; font-size: .82rem; letter-spacing: .14em; text-transform: uppercase; }
+.section-dark .card h3 { color: var(--charcoal); }
+.card .coach-name, .section-dark .card .coach-name { color: var(--blue); font-weight: 700; font-size: clamp(1.7rem, 3vw, 2.2rem); letter-spacing: .02em; }
 
 /* ---------- Location ---------- */
 .map-frame { border: 0; width: 100%; height: 420px; border-radius: 6px; box-shadow: var(--shadow); }
