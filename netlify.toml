@@ -36,6 +36,10 @@
   to = "/group-fitness.html"
   status = 200
 [[redirects]]
+  from = "/programming"
+  to = "/programming.html"
+  status = 200
+[[redirects]]
   from = "/group-training"
   to = "/group-fitness.html"
   status = 301
