@@ -32,12 +32,16 @@
   to = "/open-gym.html"
   status = 200
 [[redirects]]
+  from = "/group-fitness"
+  to = "/group-fitness.html"
+  status = 200
+[[redirects]]
   from = "/group-training"
-  to = "/open-gym.html"
+  to = "/group-fitness.html"
   status = 301
 [[redirects]]
   from = "/group-training.html"
-  to = "/open-gym.html"
+  to = "/group-fitness.html"
   status = 301
 [[redirects]]
   from = "/personal-training"

@@ -57,6 +57,10 @@
       "addressCountry": "AU"
     },
     "geo": { "@type": "GeoCoordinates", "latitude": -31.9438, "longitude": 115.8697 },
+    "amenityFeature": [
+      { "@type": "LocationFeatureSpecification", "name": "Gated kids creche area with child-proof lock", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Open gym floor for member use", "value": true }
+    ],
     "areaServed": ["Perth", "East Perth", "Highgate", "Northbridge", "Leederville", "Mount Lawley", "Perth CBD"],
     "openingHoursSpecification": [
       { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "05:30", "closes": "19:30" },
@@ -75,6 +79,7 @@
         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "CrossFit Classes", "url": "https://www.grandstandcrossfit.com.au/crossfit.html" } },
         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Hyrox Training", "url": "https://www.grandstandcrossfit.com.au/hyrox.html" } },
         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Olympic Weightlifting", "url": "https://www.grandstandcrossfit.com.au/weightlifting.html" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Group Fitness Classes", "url": "https://www.grandstandcrossfit.com.au/group-fitness.html" } },
         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Open Gym", "url": "https://www.grandstandcrossfit.com.au/open-gym.html" } },
         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Personal Training", "url": "https://www.grandstandcrossfit.com.au/personal-training.html" } },
         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kids Fitness", "url": "https://www.grandstandcrossfit.com.au/kids.html" } }
@@ -105,6 +110,11 @@
         "@type": "Question",
         "name": "I've never done CrossFit before. Can I still join?",
         "acceptedAnswer": { "@type": "Answer", "text": "Absolutely. Every workout at Grandstand is coached and scaled to your level. Your first session is free, and our beginner onboarding teaches you the foundational movements safely before you jump into classes." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I bring my kids while I train at Grandstand?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Grandstand has a gated kids creche area with a child-proof lock inside the gym, with bean bags, toys, a chalkboard and Netflix — so parents can train while their kids play safely." }
       },
       {
         "@type": "Question",
@@ -286,7 +296,8 @@
         <ul class="checklist">
           <li>Every class capped and coach-led — never lost in the crowd</li>
           <li>Scaled for complete beginners through to competitive athletes</li>
-          <li>Community events, comps and Saturday team WODs</li>
+          <li>Community events, comps and Saturday sessions</li>
+          <li>Gated kids crèche with a child-proof lock — bring the kids while you train</li>
         </ul>
         <a class="btn btn-blue" href="/about.html">Our Story &amp; Coaches</a>
       </div>
@@ -408,6 +419,10 @@
           <div class="faq-a">We're at 92 Parry Street, Perth WA 6000 — right near HBF Park on the edge of the CBD, minutes from East Perth, Highgate, Northbridge, Mount Lawley and Leederville. Street parking is available nearby, and we're an easy walk from Claisebrook and McIver stations.</div>
         </details>
         <details>
+          <summary>Can I bring my kids while I train?</summary>
+          <div class="faq-a">Yes — Grandstand has a gated kids crèche area with a child-proof lock, right inside the gym. Kids can relax on the bean bags, play with the toys, draw on the chalkboard or watch Netflix while you train. It's one of our favourite points of difference.</div>
+        </details>
+        <details>
           <summary>Do you run Hyrox training in Perth?</summary>
           <div class="faq-a">Yes — every Sunday at 9am we run a dedicated Hyrox session: sled pushes and pulls, ski erg, wall balls, lunges and running intervals. It's the perfect supplement to your CrossFit training through the week, whether you're targeting your first Hyrox Perth event or chasing a PB.</div>
         </details>
@@ -468,6 +483,7 @@
         <h4>Programs</h4>
         <ul>
           <li><a href="/crossfit.html">CrossFit Perth</a></li>
+          <li><a href="/group-fitness.html">Group Fitness</a></li>
           <li><a href="/hyrox.html">Hyrox Training</a></li>
           <li><a href="/weightlifting.html">Weightlifting</a></li>
           <li><a href="/open-gym.html">Open Gym</a></li>
