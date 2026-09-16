@@ -303,6 +303,8 @@ section { padding: 84px 0; }
 }
 .ttw-day.weekend > h3 { background: var(--blue); color: var(--charcoal); }
 .ttw-day ul { list-style: none; display: grid; gap: 8px; align-content: start; }
+.ttw-day li a { display: block; text-decoration: none; color: inherit; }
+.sess > a { display: flex; align-items: center; gap: 20px; width: 100%; text-decoration: none; color: inherit; }
 .ttw-day li {
   border-radius: var(--radius); padding: 9px 11px;
   background: var(--paper); border: 2px solid transparent; border-left: 5px solid var(--blue);
