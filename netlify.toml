@@ -1,6 +1,7 @@
 # Netlify configuration — static site, no build step
 [build]
   publish = "."
+  functions = "netlify/functions"
 
 [[headers]]
   for = "/*"
@@ -38,6 +39,10 @@
 [[redirects]]
   from = "/programming"
   to = "/programming.html"
+  status = 200
+[[redirects]]
+  from = "/thanks"
+  to = "/thanks.html"
   status = 200
 [[redirects]]
   from = "/group-training"

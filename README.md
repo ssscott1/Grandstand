@@ -25,14 +25,15 @@ static host (Netlify, Vercel, Cloudflare Pages, GitHub Pages, S3).
 
 - **Free trial form** on every page (`#free-trial`), mobile sticky CTA bar, header CTA,
   click-to-call everywhere.
-- Every submission is (1) recorded in **Netlify Forms** (`name="free-trial"`,
-  honeypot spam filter — see Netlify dashboard → Forms) and (2) **emailed to
-  info@grandstandcrossfit.com.au** via FormSubmit (formsubmit.co). FormSubmit
-  requires one-time activation: the first submission sends a confirmation email
-  to that inbox — click "Activate" once and all future submissions arrive as
-  emails. For belt-and-braces, also enable Netlify's native notification:
-  Netlify dashboard → Project → Forms → Notifications → Add → Email.
-  A `data-endpoint` attribute on any form overrides this with a custom service.
+- Forms are plain **native Netlify Forms** POSTs (no JavaScript in the submit
+  path) that land on `/thanks.html`. Every verified submission is recorded in
+  the Netlify dashboard → Forms, and a `submission-created` Netlify Function
+  (`netlify/functions/`) relays the details as an email to
+  info@grandstandcrossfit.com.au via FormSubmit. FormSubmit needs one-time
+  activation: the first relayed submission sends a confirmation email to that
+  inbox (check spam) — click "Activate" once. Also enable Netlify's native
+  notification (dashboard → Forms → Notifications → Add → Email) as the
+  primary, zero-dependency channel.
 
 ## SEO / AI-search
 
