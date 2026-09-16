@@ -40,10 +40,10 @@
   }
 
   /* Lead forms
-     Set data-endpoint on the <form> to your form service URL
-     (e.g. Formspree/Basin). Until then, submissions open a
-     pre-filled email to info@grandstandcrossfit.com.au so no
-     lead is ever lost. */
+     Submissions are recorded in Netlify Forms AND emailed to
+     info@grandstandcrossfit.com.au via FormSubmit. A data-endpoint
+     attribute on a form overrides both with a custom service. */
+  var LEAD_EMAIL = "info@grandstandcrossfit.com.au";
   document.querySelectorAll("form.lead-form").forEach(function (form) {
     form.addEventListener("submit", function (e) {
       e.preventDefault();
@@ -52,19 +52,34 @@
       var endpoint = form.getAttribute("data-endpoint");
 
       if (!endpoint && form.hasAttribute("data-netlify")) {
-        fetch("/", {
+        var netlifyPost = fetch("/", {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
           body: new URLSearchParams(data).toString()
-        })
-          .then(function (r) {
-            if (!r.ok) throw new Error("send failed");
+        });
+        var emailPost = fetch("https://formsubmit.co/ajax/" + LEAD_EMAIL, {
+          method: "POST",
+          headers: { "Content-Type": "application/json", Accept: "application/json" },
+          body: JSON.stringify({
+            Name: data.get("name") || "-",
+            Mobile: data.get("phone") || "-",
+            Email: data.get("email") || "-",
+            "Interested in": data.get("program") || "-",
+            Goal: data.get("goal") || "-",
+            _subject: "Free Trial Enquiry — " + (data.get("name") || "Website"),
+            _template: "table",
+            _captcha: "false"
+          })
+        });
+        Promise.allSettled([netlifyPost, emailPost]).then(function (results) {
+          var anyOk = results.some(function (r) { return r.status === "fulfilled" && r.value && r.value.ok; });
+          if (anyOk) {
             form.reset();
             show(msg, "ok", "You're in! We'll be in touch within one business day to lock in your free trial.");
-          })
-          .catch(function () {
+          } else {
             show(msg, "err", "Something went wrong — call us on 0424 476 235 or email info@grandstandcrossfit.com.au.");
-          });
+          }
+        });
       } else if (endpoint) {
         fetch(endpoint, { method: "POST", body: data, headers: { Accept: "application/json" } })
           .then(function (r) {
