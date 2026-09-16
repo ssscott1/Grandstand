@@ -446,6 +446,19 @@ section { padding: 84px 0; }
 @media (max-width: 560px) { .footer-grid { grid-template-columns: 1fr; } }
 .site-footer ul { list-style: none; }
 .site-footer li { margin-bottom: 9px; }
+.footer-logos {
+  display: flex; align-items: center; justify-content: center; gap: 38px; flex-wrap: wrap;
+  margin-top: 52px; padding-top: 40px; border-top: 1px solid #2c2b2c;
+}
+.footer-logos .flogo { display: block; text-decoration: none; }
+.footer-logos svg { height: 64px; width: auto; display: block; }
+.flogo-divider { width: 2px; height: 56px; background: #2c2b2c; }
+.flogo-cf {
+  font-family: var(--display); font-size: 56px; line-height: 1; color: var(--white);
+  letter-spacing: .03em;
+}
+.flogo-cf sup { font-size: .95rem; font-family: var(--body); vertical-align: super; }
+
 .footer-bottom { border-top: 1px solid #2c2b2c; margin-top: 46px; padding-top: 24px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: .82rem; }
 
 /* ---------- Mobile sticky CTA ---------- */
