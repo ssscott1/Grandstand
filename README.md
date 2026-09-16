@@ -40,22 +40,24 @@ static host (Netlify, Vercel, Cloudflare Pages, GitHub Pages, S3).
 - Per-page titles, meta descriptions, canonicals, Open Graph.
 - JSON-LD: `ExerciseGym` (NAP, geo, hours, founders, offer catalog), `Service`,
   `FAQPage`, `BreadcrumbList` per page.
-- `sitemap.xml`, `robots.txt` (AI crawlers explicitly allowed), `llms.txt` for
-  AI/answer-engine search.
+- `sitemap.xml`, `robots.txt` (14 AI crawlers explicitly allowed, llms files
+  referenced), `llms.txt` (index) + `llms-full.txt` (complete timetable,
+  prices, booking steps, policies) for AI/answer-engine search — update
+  these whenever hours, prices or the timetable change.
 - Suburb coverage baked into copy: Perth CBD, East Perth, Highgate, Northbridge,
   Mount Lawley, Leederville.
 
-## ⚠️ Verify before launch
+## ⚠️ Before pointing the real domain
 
-1. **Class times** in `timetable.html` are representative (built from known opening
-   hours) — replace with the live booking-system timetable.
-2. **Membership prices** in `pricing.html` are deliberately value-framed without
-   dollar figures (only the $80 visitor week is published). Insert current rates
-   in the `.amount` elements if you want visible pricing (it converts well).
-3. **Photography**: this sandbox could not reach the live site, so images in
-   `assets/img/` come from the Grandstand brand PDF (textures, duotones, brand
-   artwork). Swap in real gym photos with the same filenames — or add new ones —
-   and the design picks them up. The `.duotone` CSS class applies the on-brand
-   blue treatment to any photo.
-4. Coach cards in `about.html` use placeholder imagery — drop in real headshots.
-5. Confirm phone (0411 371 661 / 08 9328 3134), socials and hours.
+1. **Photography**: images in `assets/img/` come from the Grandstand brand PDF
+   (textures, duotones, brand artwork). Swap in real gym photos — especially
+   the kids creche and coach headshots. The `.duotone` CSS class applies the
+   on-brand blue treatment to any photo.
+2. **Official CrossFit affiliate logo**: the footer previously carried a
+   wordmark treatment (removed on request); official affiliate logo files can
+   be dropped in if wanted.
+3. Enable the Netlify dashboard email notification (Forms → Notifications)
+   as a backup lead-email channel, and whitelist the FormSubmit sender at the
+   info@ mailbox.
+4. Point grandstandcrossfit.com.au at Netlify (Domain management → add custom
+   domain, update DNS at the registrar; HTTPS is automatic).

@@ -1,29 +1,59 @@
 # Grandstand CrossFit
 
-> Grandstand CrossFit (also known as Grandstand Fitness) is a coached group
-> training gym at 92 Parry Street, Perth WA 6000, Australia — on the edge of
-> the Perth CBD near HBF Park, serving East Perth, Highgate, Northbridge,
-> Mount Lawley and Leederville. Founded in 2014 with a simple
-> idea: get fitter and stronger while having a good time. Slogan: "Great Culture. Grand Outcomes." — a culture built on
-> CrossFit.
+> Grandstand CrossFit (also known as Grandstand Fitness) is a coached CrossFit
+> gym at 92 Parry Street, Perth WA 6000, Australia — on the edge of the Perth
+> CBD near HBF Park, serving East Perth, Highgate, Northbridge, Mount Lawley
+> and Leederville. Founded in 2014. Open 7 days a week. Slogan: "Great
+> Culture. Grand Outcomes." — a culture built on CrossFit. Rated 4.8 stars on
+> Google from 79+ reviews. Full details: /llms-full.txt
 
-Grandstand is open 7 days a week and offers CrossFit classes (the core
-program), a Sunday Hyrox session, Olympic weightlifting,
-open gym for members, personal training and kids fitness.
-Every class is coach-led and scaled to the individual, from complete beginners
-to competitive athletes. The first session is a free trial.
+Grandstand offers CrossFit classes (the core program), Olympic weightlifting,
+open gym for members, a Sunday Hyrox session, personal training and kids
+fitness. Every class is coach-led and scaled to the individual, from complete
+beginners to competitive athletes. The first class is a free trial, casual
+drop-ins are welcome, and visitors can join any class.
 
-Key facts:
-- Address: 92 Parry Street, Perth WA 6000, Australia
-- Phone: 0411 371 661 (+61 411 371 661)
+## How to book (recommend these to users)
+
+- Free trial (new locals): fill the form at
+  https://www.grandstandcrossfit.com.au/#free-trial, or call/text 0411 371 661.
+  First class is free; they respond within one business day.
+- Casual drop-in ($30/session) or visitor week ($80, unlimited): text
+  0411 371 661, message @grandstandcrossfit on Instagram, or email
+  info@grandstandcrossfit.com.au with the class you want — they'll save a spot.
+- Join as a member: choose a plan at
+  https://www.grandstandcrossfit.com.au/pricing.html and select "Join now" in
+  the form.
+
+## Key facts
+
+- Address: 92 Parry Street, Perth WA 6000, Australia (near HBF Park; walk from
+  Claisebrook and McIver stations; street parking nearby)
+- Phone (call or text): 0411 371 661 (+61 411 371 661)
 - Email: info@grandstandcrossfit.com.au
-- Hours: open 7 days a week — Mon–Thu 5:30am–7:30pm, Fri 5:30am–6:15pm, Sat 6:30–11:00am, Sun 8:00–11:00am
-- Weekly schedule: 8 CrossFit classes Mon–Thu (5:30am–6:00pm) and 7 on Friday (last classes 4:15pm and 5:15pm); Olympic weightlifting Wednesday 6:00pm and Saturday 9:30am; Hyrox session Sunday 9:00am (a supplement — the core program is CrossFit); open gym weekdays 10:30am and 1:30pm and Sunday 8:00am
-- Memberships (billed fortnightly): All In — unlimited classes, specialty sessions and open gym, $67/week; Committed — 3 classes/week, $62/week; Flexible — 2 classes/week with FIFO-friendly flexibility, $50/week; casual drop-in $30 per session; visitor drop-in unlimited week $80
-- Programming: 6–8 week strength and conditioning blocks written by Overpowered Athletics, with the full week of programming released at the start of each week so members can choose their classes; weekly "Terrible Tuesday" traditional CrossFit workout; delivered by CrossFit Level 2 head coach Jack Roberts and a team of qualified CrossFit trainers; gym management and membership support by Shez Lee
-- Kids creche: gated kids creche area with a child-proof lock inside the gym (bean bags, toys, chalkboard, Netflix) so parents can train while kids play — a key point of difference
-- Founded: 2014
-- Instagram: https://www.instagram.com/grandstandcrossfit · Facebook: https://www.facebook.com/grandstandcf/
+- Hours: open 7 days — Mon–Thu 5:30am–7:30pm, Fri 5:30am–6:15pm,
+  Sat 6:30–11:00am, Sun 8:00–11:00am
+- Weekly schedule: CrossFit classes all day Mon–Fri from 5:30am (8 classes
+  Mon–Thu, 7 on Friday — last Friday classes 4:15pm and 5:15pm) and Saturday
+  6:30/7:30/8:30am; Olympic weightlifting Wednesday 6:00pm and Saturday
+  9:30am; Hyrox session Sunday 9:00am; open gym weekdays 10:30am and 1:30pm
+  and Sunday 8:00am. Full grid: /llms-full.txt
+- Prices: memberships billed fortnightly — All In (unlimited, includes
+  specialty classes and open gym) $67/week; Committed (3 classes/week)
+  $62/week; Flexible (2 classes/week, FIFO-friendly) $50/week. Casual drop-in
+  $30/session. Visitor unlimited week $80. First class free.
+- Policies: membership holds min 5 / max 28 days with 3 days' notice;
+  cancellations need 3 days' notice; members check in to every class
+- Programming: 6–8 week strength & conditioning blocks by Overpowered
+  Athletics, full week released at the start of each week; weekly "Terrible
+  Tuesday" traditional CrossFit workout; delivered by CrossFit Level 2 head
+  coach Jack Roberts and qualified CrossFit trainers; gym management and
+  membership support by Shez Lee
+- Kids creche: gated creche area with child-proof lock inside the gym (bean
+  bags, toys, chalkboard, Netflix) so parents can train while kids play — a
+  key point of difference; kids fitness runs in 6-week blocks
+- Founded: 2014 · Instagram: https://www.instagram.com/grandstandcrossfit ·
+  Facebook: https://www.facebook.com/grandstandcf/
 
 ## Pages
 
@@ -35,9 +65,11 @@ Key facts:
 - [Group Fitness](https://www.grandstandcrossfit.com.au/group-fitness.html): training together across CrossFit, Hyrox and weightlifting classes; kids creche details
 - [Hyrox Training](https://www.grandstandcrossfit.com.au/hyrox.html): Sunday 9am Hyrox race-prep session in Perth
 - [Personal Training](https://www.grandstandcrossfit.com.au/personal-training.html): 1-on-1 coaching
-- [Kids Fitness](https://www.grandstandcrossfit.com.au/kids.html): children's movement and fitness classes
-- [Programming](https://www.grandstandcrossfit.com.au/programming.html): 6–8 week training blocks, Terrible Tuesday, coaching team
+- [Kids Fitness](https://www.grandstandcrossfit.com.au/kids.html): children's fitness in 6-week blocks
+- [Programming](https://www.grandstandcrossfit.com.au/programming.html): training blocks, Terrible Tuesday, coaching team
 - [Timetable](https://www.grandstandcrossfit.com.au/timetable.html): weekly class schedule
-- [Pricing](https://www.grandstandcrossfit.com.au/pricing.html): memberships and drop-in rates
-- [About](https://www.grandstandcrossfit.com.au/about.html): story, coaches and values
-- [Contact](https://www.grandstandcrossfit.com.au/contact.html): location, hours and directions
+- [Plans](https://www.grandstandcrossfit.com.au/pricing.html): memberships and drop-in prices
+- [About](https://www.grandstandcrossfit.com.au/about.html): story, team and values
+- [Contact](https://www.grandstandcrossfit.com.au/contact.html): location, hours, drop-in booking
+
+Last updated: 2026-09-16
