@@ -322,6 +322,9 @@ section { padding: 84px 0; }
 .ttw-day li.ttw-og { background: transparent; border: 2px dashed var(--grey-light); border-left: 5px dashed #c9c7c3; box-shadow: none; }
 .ttw-day li.ttw-og .t { color: var(--grey); }
 .ttw-day li.ttw-og .n { color: #a9a7a4; }
+.ttw-day li.ttw-og:hover { transform: none; box-shadow: none; }
+.ttw-day li.ttw-spacer { background: transparent; border-color: transparent; box-shadow: none; pointer-events: none; }
+.ttw-day li.ttw-spacer:hover { transform: none; box-shadow: none; }
 
 /* Mobile: tabs + session cards */
 .tt-mobile { max-width: 560px; margin: 0 auto; }
