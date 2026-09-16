@@ -370,6 +370,8 @@ section { padding: 84px 0; }
   letter-spacing: .14em; text-transform: uppercase; color: var(--grey); margin-top: 4px;
 }
 .price-card .amount small { font-size: .92em; font-weight: 700; letter-spacing: .08em; }
+.price-card .price { font-family: var(--display); font-size: 2.3rem; color: var(--charcoal); line-height: 1; margin-top: 12px; }
+.price-card .price small { font-size: 1rem; font-family: var(--body); font-weight: 700; color: var(--grey); }
 .price-card ul { list-style: none; text-align: left; margin: 10px 0 6px; }
 .price-card li { padding: 9px 0 9px 30px; border-bottom: 1px dashed var(--grey-light); position: relative; font-size: .95rem; }
 .price-card li::before { content: "✓"; position: absolute; left: 4px; color: var(--blue); font-weight: 900; }
