@@ -168,7 +168,7 @@
               <li>All specialty classes</li>
               <li>Weekday open gym at 10:30am &amp; 1:30pm</li>
             </ul>
-            <a class="btn btn-blue" href="#free-trial">Start Free Trial</a>
+            <a class="btn btn-blue" href="?intent=join&amp;plan=All+In#free-trial">Get Started</a>
           </div>
         </article>
         <article class="card price-card">
@@ -182,7 +182,7 @@
               <li>Weekday open gym sessions</li>
               <li>Perfect training-to-life balance</li>
             </ul>
-            <a class="btn btn-dark" href="#free-trial">Start Free Trial</a>
+            <a class="btn btn-dark" href="?intent=join&amp;plan=Committed#free-trial">Get Started</a>
           </div>
         </article>
         <article class="card price-card">
@@ -196,7 +196,7 @@
               <li>Upgrade any time</li>
               <li>Great alongside sport or PT</li>
             </ul>
-            <a class="btn btn-dark" href="#free-trial">Start Free Trial</a>
+            <a class="btn btn-dark" href="?intent=join&amp;plan=Flexible#free-trial">Get Started</a>
           </div>
         </article>
       </div>
@@ -238,7 +238,7 @@
           </div>
         </article>
       </div>
-      <p class="note center" style="margin-top:26px;font-size:1.02rem">All In, Committed and Flexible are recurring memberships billed fortnightly. Questions? <a href="#free-trial"><strong>Book a free trial</strong></a> or call <a href="tel:+61411371661"><strong>0411 371 661</strong></a> — zero pressure.</p>
+      <p class="note center" style="margin-top:26px;font-size:1.02rem">All In, Committed and Flexible are recurring memberships billed fortnightly — and every plan can begin with a free first class if you'd like to try us before you commit. Questions? <a href="#free-trial"><strong>Book a free trial</strong></a> or call <a href="tel:+61411371661"><strong>0411 371 661</strong></a> — zero pressure.</p>
     </div>
   </section>
 
@@ -262,7 +262,7 @@
       <div>
         <span class="kicker">Free trial</span>
         <h2 class="tilt">Your first session is <span class="blue">on us</span></h2>
-        <p style="margin-top:20px">Start with a free class, then pick your plan. We'll talk you through current rates with zero pressure.</p>
+        <p style="margin-top:20px">Choose "join now" in the form and we'll have you training this week — or claim a free first class and decide after. Either way, zero pressure.</p>
         <ul class="checklist">
           <li>No cost, no contract, no pressure</li>
           <li>Beginner-friendly — every movement scaled to you</li>
@@ -290,6 +290,14 @@
             <label for="lf-email">Email</label>
             <input id="lf-email" name="email" type="email" autocomplete="email" required>
           </div>
+          <div class="field">
+            <label for="lf-start">How do you want to start?</label>
+            <select id="lf-start" name="start">
+              <option>Claim my free trial — first class free</option>
+              <option>Join now — sign me up</option>
+            </select>
+          </div>
+          <input type="hidden" name="plan" value="">
           <div class="field">
             <label for="lf-program">I'm interested in</label>
             <select id="lf-program" name="program">
@@ -372,6 +380,6 @@
   <a class="trial" href="/#free-trial">Book a Free Trial</a>
 </nav>
 
-<script src="/assets/js/main.js?v=2" defer></script>
+<script src="/assets/js/main.js?v=3" defer></script>
 </body>
 </html>

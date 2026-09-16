@@ -177,8 +177,8 @@
       <h1><span class="tilt">Perth's home of</span><br><span class="blue">CrossFit</span>,<br><span class="chalk chalk--white">Weightlifting</span> &amp; Gymnastics</h1>
       <p class="lead">Great culture. Grand outcomes. Coached CrossFit classes that make you fitter, stronger and part of something — whether it's your first squat or your fiftieth competition.</p>
       <div class="btn-row">
-        <a class="btn btn-blue btn-lg" href="#free-trial">Book Your Free Trial</a>
-        <a class="btn btn-ghost btn-lg" href="/timetable.html">View Timetable</a>
+        <a class="btn btn-blue btn-lg" href="#free-trial">Claim Your Free Trial</a>
+        <a class="btn btn-ghost btn-lg" href="/pricing.html">Ready to Join? Get Started</a>
       </div>
     </div>
   </div>
@@ -381,6 +381,14 @@
             <input id="lf-email" name="email" type="email" autocomplete="email" required>
           </div>
           <div class="field">
+            <label for="lf-start">How do you want to start?</label>
+            <select id="lf-start" name="start">
+              <option>Claim my free trial — first class free</option>
+              <option>Join now — sign me up</option>
+            </select>
+          </div>
+          <input type="hidden" name="plan" value="">
+          <div class="field">
             <label for="lf-program">I'm interested in</label>
             <select id="lf-program" name="program">
               <option>CrossFit</option>
@@ -466,7 +474,10 @@
   <section class="section-tex torn cta-banner">
     <div class="wrap">
       <h2 class="tilt">Celebrate those <span class="chalk chalk--white">PBs.</span><br>Enjoy together.</h2>
-      <a class="btn btn-dark btn-lg" href="#free-trial">Book Your Free Trial</a>
+      <div class="btn-row" style="margin-top:30px;justify-content:center">
+        <a class="btn btn-dark btn-lg" href="#free-trial">Claim Your Free Trial</a>
+        <a class="btn btn-ghost btn-lg" href="/pricing.html">Get Started</a>
+      </div>
     </div>
   </section>
 
@@ -527,6 +538,6 @@
   <a class="trial" href="/#free-trial">Book a Free Trial</a>
 </nav>
 
-<script src="/assets/js/main.js?v=2" defer></script>
+<script src="/assets/js/main.js?v=3" defer></script>
 </body>
 </html>

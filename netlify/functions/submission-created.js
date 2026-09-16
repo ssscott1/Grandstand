@@ -10,6 +10,8 @@ exports.handler = async function (event) {
       method: "POST",
       headers: { "Content-Type": "application/json", Accept: "application/json" },
       body: JSON.stringify({
+        "How they want to start": d.start || "-",
+        "Chosen plan": d.plan || "-",
         Name: d.name || "-",
         Mobile: d.phone || "-",
         Email: d.email || "-",
