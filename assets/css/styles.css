@@ -122,7 +122,7 @@ section { padding: 84px 0; }
 .btn-dark { background: var(--charcoal); color: var(--white); }
 .btn-dark:hover { background: var(--ink); }
 .btn-ghost { border-color: currentColor; color: var(--charcoal); background: transparent; }
-.section-dark .btn-ghost, .hero .btn-ghost { color: var(--white); }
+.section-dark .btn-ghost, .hero .btn-ghost, .page-hero .btn-ghost { color: var(--white); }
 .btn-lg { font-size: 1.25rem; padding: 18px 44px; }
 .btn-row { display: flex; gap: 16px; flex-wrap: wrap; }
 
