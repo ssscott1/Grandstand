@@ -58,4 +58,4 @@ static host (Netlify, Vercel, Cloudflare Pages, GitHub Pages, S3).
    and the design picks them up. The `.duotone` CSS class applies the on-brand
    blue treatment to any photo.
 4. Coach cards in `about.html` use placeholder imagery — drop in real headshots.
-5. Confirm phone (0424 476 235 / 08 9328 3134), socials and hours.
+5. Confirm phone (0411 371 661 / 08 9328 3134), socials and hours.
