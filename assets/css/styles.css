@@ -454,10 +454,11 @@ section { padding: 84px 0; }
 .footer-logos svg { height: 64px; width: auto; display: block; }
 .flogo-divider { width: 2px; height: 56px; background: #2c2b2c; }
 .flogo-cf {
-  font-family: var(--display); font-size: 56px; line-height: 1; color: var(--white);
-  letter-spacing: .03em;
+  font-family: var(--body); font-weight: 800; font-style: italic;
+  font-size: 64px; line-height: 1; color: var(--white);
+  letter-spacing: -.02em;
 }
-.flogo-cf sup { font-size: .95rem; font-family: var(--body); vertical-align: super; }
+.flogo-cf sup { font-size: 1rem; font-style: normal; font-weight: 600; vertical-align: super; margin-left: 2px; }
 
 .footer-bottom { border-top: 1px solid #2c2b2c; margin-top: 46px; padding-top: 24px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: .82rem; }
 
