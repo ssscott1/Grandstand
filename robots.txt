@@ -32,7 +32,7 @@ User-agent: cohere-ai
 Allow: /
 
 # Machine-readable site summaries for AI assistants
-# https://www.grandstandcrossfit.com.au/llms.txt
-# https://www.grandstandcrossfit.com.au/llms-full.txt
+# https://grandstandcrossfit.com.au/llms.txt
+# https://grandstandcrossfit.com.au/llms-full.txt
 
-Sitemap: https://www.grandstandcrossfit.com.au/sitemap.xml
+Sitemap: https://grandstandcrossfit.com.au/sitemap.xml

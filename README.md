@@ -1,6 +1,6 @@
 # Grandstand CrossFit — Website
 
-Elite lead-generation rebuild of [grandstandcrossfit.com.au](https://www.grandstandcrossfit.com.au) —
+Elite lead-generation rebuild of [grandstandcrossfit.com.au](https://grandstandcrossfit.com.au) —
 same offerings and services, redesigned around the 2018 Grandstand brand guidelines
 (Grandstand Blue `#00ADEF` / Grandstand Charcoal `#141314`, "Great Culture. Grand Outcomes.").
 
