@@ -39,21 +39,20 @@
     if (todayBtn) todayBtn.click();
   }
 
-  /* Start intent: trial vs join-now */
+  /* Entry-link intent: free-trial buttons keep the default; "Get Started"
+     links from the Plans page arrive with ?intent=join */
   var params = new URLSearchParams(window.location.search);
-  document.querySelectorAll("form.lead-form").forEach(function (form) {
-    var start = form.querySelector('select[name="start"]');
-    var btn = form.querySelector('button[type="submit"]');
-    var plan = form.querySelector('input[name="plan"]');
-    if (!start || !btn) return;
-    if (params.get("intent") === "join") start.selectedIndex = 1;
-    if (plan && params.get("plan")) plan.value = params.get("plan");
-    function sync() {
-      btn.textContent = start.selectedIndex === 1 ? "Get Started" : "Claim My Free Trial";
-    }
-    start.addEventListener("change", sync);
-    sync();
-  });
+  if (params.get("intent") === "join") {
+    document.querySelectorAll("form.lead-form").forEach(function (form) {
+      var start = form.querySelector('input[name="start"]');
+      var btn = form.querySelector('button[type="submit"]');
+      var plan = form.querySelector('input[name="plan"]');
+      if (!start || !btn) return;
+      start.value = "Get Started";
+      btn.textContent = "Get Started";
+      if (plan && params.get("plan")) plan.value = params.get("plan");
+    });
+  }
 
   /* Current year */
   document.querySelectorAll("[data-year]").forEach(function (el) {

@@ -6,18 +6,20 @@ exports.handler = async function (event) {
   try {
     const body = JSON.parse(event.body || "{}");
     const d = (body.payload && body.payload.data) || {};
+    const isJoin = (d.start || "").toLowerCase().includes("get started");
+    const subjectType = isJoin ? "Get Started Enquiry" : "Free Trial Enquiry";
     const res = await fetch("https://formsubmit.co/ajax/" + LEAD_EMAIL, {
       method: "POST",
       headers: { "Content-Type": "application/json", Accept: "application/json" },
       body: JSON.stringify({
-        "How they want to start": d.start || "-",
+        "Enquiry type": subjectType,
         "Chosen plan": d.plan || "-",
         Name: d.name || "-",
         Mobile: d.phone || "-",
         Email: d.email || "-",
         "Interested in": d.program || "-",
         Goal: d.goal || "-",
-        _subject: "Free Trial Enquiry — " + (d.name || "Website"),
+        _subject: subjectType + " — " + (d.name || "Website"),
         _template: "table",
         _captcha: "false"
       })
