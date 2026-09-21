@@ -81,7 +81,8 @@ p.lead { font-size: clamp(1.05rem, 1.8vw, 1.3rem); font-weight: 500; }
 .wrap { max-width: var(--max); margin: 0 auto; padding: 0 22px; }
 section { padding: 84px 0; }
 .section-dark { background: var(--charcoal); color: #d9d8d6; }
-.section-dark h2, .section-dark h3 { color: var(--white); }
+.section-dark h1, .section-dark h2, .section-dark h3 { color: var(--white); }
+.section-dark .lead-panel h3 { color: var(--charcoal); }
 .section-blue { background: var(--blue); color: var(--charcoal); }
 .section-tex {
   background: var(--blue) url("../img/tex-chalk-blue-1.jpg") center/cover no-repeat;

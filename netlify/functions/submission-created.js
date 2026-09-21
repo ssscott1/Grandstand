@@ -6,13 +6,20 @@ exports.handler = async function (event) {
   try {
     const body = JSON.parse(event.body || "{}");
     const d = (body.payload && body.payload.data) || {};
+    const formName = (body.payload && body.payload.form_name) || "";
+    const isMeta = formName === "meta-lead" || (d.source || "") === "Meta";
     const isJoin = (d.start || "").toLowerCase().includes("get started");
-    const subjectType = isJoin ? "Get Started Enquiry" : "Free Trial Enquiry";
+    const subjectType = isMeta
+      ? "META LEAD — Free Trial"
+      : isJoin ? "Get Started Enquiry" : "Free Trial Enquiry";
     const res = await fetch("https://formsubmit.co/ajax/" + LEAD_EMAIL, {
       method: "POST",
       headers: { "Content-Type": "application/json", Accept: "application/json" },
       body: JSON.stringify({
         "Enquiry type": subjectType,
+        "Lead source": isMeta
+          ? "Meta ad" + ((c => c ? " (" + c + ")" : "")([d.utm_campaign, d.utm_content].filter(Boolean).join(" / ")))
+          : "Website",
         "Chosen plan": d.plan || "-",
         Name: d.name || "-",
         Mobile: d.phone || "-",
