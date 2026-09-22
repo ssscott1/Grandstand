@@ -1,0 +1,52 @@
+# Temporary utility workflow: fetches the gym photo shoot from the
+# link-shared Google Drive folder, resizes everything to web-friendly
+# masters, and pushes them to the claude/photos-inbox branch so the
+# sandboxed build session can pull them through git.
+name: Fetch gym photos
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Download Drive folder
+        run: |
+          pip install --quiet gdown pillow
+          mkdir -p /tmp/photos
+          gdown --folder "https://drive.google.com/drive/folders/1L4kweowWnhn7FHbiZC1ZNLGkpMGP3q02" -O /tmp/photos --remaining-ok \
+            || gdown --folder "https://drive.google.com/drive/folders/1b_jskQDQBMecs4NAnfrzYByDvAfpqW4I" -O /tmp/photos --remaining-ok
+          find /tmp/photos -type f | sort
+      - name: Resize to web masters
+        run: |
+          python3 - <<'PY'
+          import os, pathlib
+          from PIL import Image, ImageOps
+          src = pathlib.Path("/tmp/photos")
+          out = pathlib.Path("photos-inbox")
+          out.mkdir(exist_ok=True)
+          n = 0
+          for p in sorted(src.rglob("*")):
+              if p.suffix.lower() not in (".jpg", ".jpeg", ".png"):
+                  continue
+              im = ImageOps.exif_transpose(Image.open(p))
+              im.thumbnail((2200, 2200), Image.LANCZOS)
+              dest = out / (p.stem + ".jpg")
+              im.convert("RGB").save(dest, "JPEG", quality=88, optimize=True)
+              n += 1
+              print(dest, im.size)
+          print(f"{n} photos resized")
+          raise SystemExit(0 if n else 1)
+          PY
+      - name: Push to photos-inbox branch
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@users.noreply.github.com"
+          git checkout -B claude/photos-inbox
+          git add -f photos-inbox
+          git commit -m "Add resized gym photos fetched from Google Drive"
+          git push -f origin claude/photos-inbox
