@@ -204,14 +204,16 @@ section { padding: 84px 0; }
 }
 .hero-badges span b { color: var(--blue); }
 
-/* GS badge */
-.gs-badge {
-  width: 108px; height: 108px; border-radius: 50%;
+/* Brand tagline badge — "a culture built on crossfit", per brand guide pg.11/15/19/20:
+   a solid hexagon carrying the positioning statement, placed beside the wordmark —
+   never fused into a monogram. */
+.culture-badge {
+  width: 132px; height: 132px;
+  clip-path: polygon(25% 3%, 75% 3%, 100% 50%, 75% 97%, 25% 97%, 0% 50%);
   background: var(--blue); color: var(--charcoal);
   display: flex; align-items: center; justify-content: center; text-align: center;
-  font-weight: 800; font-size: .68rem; letter-spacing: .12em; text-transform: uppercase;
-  transform: rotate(8deg);
-  padding: 14px; line-height: 1.35;
+  font-weight: 800; font-size: .72rem; letter-spacing: .08em; text-transform: uppercase;
+  padding: 18px; line-height: 1.35; flex: none;
 }
 
 /* ---------- Cards ---------- */

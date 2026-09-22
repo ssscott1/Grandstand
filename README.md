@@ -4,6 +4,10 @@ Elite lead-generation rebuild of [grandstandcrossfit.com.au](https://grandstandc
 same offerings and services, redesigned around the 2018 Grandstand brand guidelines
 (Grandstand Blue `#00ADEF` / Grandstand Charcoal `#141314`, "Great Culture. Grand Outcomes.").
 
+**Brand compliance is binding — see [`CLAUDE.md`](./CLAUDE.md).** The source
+brand guideline PDF is archived page-by-page at `docs/brand/`. Every visual
+change must match it until a new brand document replaces it.
+
 Pure static HTML/CSS/JS — no build step, no framework. Deploy the repo root to any
 static host (Netlify, Vercel, Cloudflare Pages, GitHub Pages, S3).
 
