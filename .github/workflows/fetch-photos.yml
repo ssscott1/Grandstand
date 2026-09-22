@@ -21,7 +21,9 @@ jobs:
           mkdir -p /tmp/photos
           while read -r id name; do
             echo "== $name"
-            gdown --fuzzy "https://drive.google.com/uc?id=$id" -O "/tmp/photos/$name" || echo "FAILED: $name"
+            gdown "$id" -O "/tmp/photos/$name" \
+              || curl -sSL "https://drive.google.com/uc?export=download&id=$id" -o "/tmp/photos/$name" \
+              || echo "FAILED: $name"
           done <<'LIST'
           1MzbDGlP-siTurXVh72M5vFzx9ERhCxCf _DSC2860.jpg
           1LGE8UzD8CczlUKAlLGwqt5JpvdQe5IdR _DSC2895.jpg
