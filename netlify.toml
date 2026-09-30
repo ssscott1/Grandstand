@@ -64,6 +64,14 @@
   to = "/start-thanks.html"
   status = 200
 [[redirects]]
+  from = "/onboard"
+  to = "/onboard.html"
+  status = 200
+[[redirects]]
+  from = "/onboard-thanks"
+  to = "/onboard-thanks.html"
+  status = 200
+[[redirects]]
   from = "/group-training"
   to = "/group-fitness.html"
   status = 301

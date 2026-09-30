@@ -1,5 +1,9 @@
 User-agent: *
 Allow: /
+Disallow: /onboard
+Disallow: /onboard.html
+Disallow: /onboard-thanks
+Disallow: /onboard-thanks.html
 
 # AI search & assistant crawlers explicitly welcome
 User-agent: GPTBot

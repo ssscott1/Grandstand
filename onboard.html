@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Employee Onboarding | Grandstand CrossFit</title>
+  <meta name="description" content="Employee onboarding form for Grandstand CrossFit staff.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://grandstandcrossfit.com.au/onboard">
+  <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/styles.css?v=5">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="/" aria-label="Grandstand CrossFit — home">
+      <svg width="94" height="46" viewBox="0 0 94 46" role="img" aria-label="Grandstand">
+        <g transform="rotate(-2 47 23)" fill="#ffffff" font-family="Anton, 'Arial Narrow', Impact, sans-serif" font-size="21" letter-spacing="1">
+          <text x="2" y="19">GRAND</text>
+          <text x="2" y="41">STAND</text>
+        </g>
+      </svg>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-label="Menu"><span></span><span></span><span></span></button>
+    <nav class="nav" aria-label="Main">
+      <a href="/programs.html">Programs</a>
+      <a href="/timetable.html">Timetable</a>
+      <a href="/pricing.html">Plans</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+      <a class="header-phone" href="tel:+61411371661">0411 371 661</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <div class="page-hero">
+    <div class="wrap">
+      <span class="kicker">Staff onboarding</span>
+      <h1 class="tilt">Welcome to the <span class="chalk chalk--white">team</span></h1>
+      <p class="lead">This form is used to onboard casual employees to <strong>Go Unbroken Pty Ltd trading as Grandstand CrossFit</strong>. Please fill it out in full and accurately — it's used to set up your pay, super and tax correctly from day one.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap grid grid-2" style="align-items:start">
+      <div>
+        <h2 class="tilt">Employee <span class="chalk">details</span></h2>
+        <p style="margin-top:16px">Every field marked required is needed to get your first pay run right. If you're not sure about a super or bank detail right now, get in touch with Shez and we'll sort it before your first pay cycle.</p>
+        <ul class="checklist" style="margin-top:22px">
+          <li>Have your driver's licence and bank details handy</li>
+          <li>Have your super fund's name, member number and USI ready (check a recent statement or the myGov super page)</li>
+          <li>Know your tax file number — you don't have to provide it, but there are tax consequences if you don't</li>
+        </ul>
+        <p class="privacy-note" style="margin-top:22px">Your details are submitted securely and go straight to Grandstand's gym management for payroll and super setup — they're not used for anything else, and never shared beyond what's needed to employ you.</p>
+      </div>
+      <div>
+        <form class="lead-panel form-wide" name="onboard" method="post" action="/onboard-thanks.html" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="onboard">
+          <input type="hidden" name="entity" value="Go Unbroken Pty Ltd trading as Grandstand CrossFit">
+          <p hidden aria-hidden="true"><label>Don't fill this out if you're human: <input name="bot-field"></label></p>
+
+          <div class="form-section">
+            <h3>Personal details</h3>
+            <p class="sub">Let's start with the basics.</p>
+            <div class="field">
+              <label for="ob-name">Full name</label>
+              <input id="ob-name" name="full_name" type="text" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="ob-address">Residential address</label>
+              <input id="ob-address" name="address" type="text" autocomplete="street-address" required>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="ob-home-phone">Home phone <span class="hint" style="display:inline">(optional)</span></label>
+                <input id="ob-home-phone" name="phone_home" type="tel" autocomplete="tel">
+              </div>
+              <div class="field">
+                <label for="ob-mobile">Mobile</label>
+                <input id="ob-mobile" name="phone_mobile" type="tel" autocomplete="tel" required>
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="ob-email">Email address</label>
+                <input id="ob-email" name="email" type="email" autocomplete="email" required>
+              </div>
+              <div class="field">
+                <label for="ob-dob">Date of birth</label>
+                <input id="ob-dob" name="dob" type="date" required>
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="ob-nationality">Nationality</label>
+                <input id="ob-nationality" name="nationality" type="text" required>
+              </div>
+              <div class="field">
+                <label>Marital status</label>
+                <div class="choice-group">
+                  <label><input type="radio" name="marital_status" value="Married" required> Married</label>
+                  <label><input type="radio" name="marital_status" value="De facto"> De facto</label>
+                  <label><input type="radio" name="marital_status" value="Unmarried"> Unmarried</label>
+                  <label><input type="radio" name="marital_status" value="Divorced"> Divorced</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <h3>Employment details</h3>
+            <div class="field-row">
+              <div class="field">
+                <label for="ob-commencement">Commencement date</label>
+                <input id="ob-commencement" name="commencement_date" type="date" required>
+              </div>
+              <div class="field">
+                <label for="ob-position">Position</label>
+                <input id="ob-position" name="position" type="text" required>
+              </div>
+            </div>
+            <div class="field">
+              <label>Employment status</label>
+              <div class="choice-group">
+                <label><input type="radio" name="employment_status" value="Casual" checked> Casual</label>
+                <label><input type="radio" name="employment_status" value="Full time"> Full time</label>
+                <label><input type="radio" name="employment_status" value="Part time"> Part time</label>
+                <label><input type="radio" name="employment_status" value="Temporary/contract"> Temporary/contract</label>
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="ob-licence">Driver's licence number</label>
+                <input id="ob-licence" name="licence_number" type="text">
+              </div>
+              <div class="field">
+                <label for="ob-licence-expiry">Licence expiry</label>
+                <input id="ob-licence-expiry" name="licence_expiry" type="date">
+              </div>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <h3>Tax file number declaration</h3>
+            <p class="sub">Quoting your TFN is not compulsory, but if you don't, tax may be withheld at the top rate.</p>
+            <div class="field">
+              <label for="ob-tfn">Tax file number</label>
+              <input id="ob-tfn" name="tfn" type="text" inputmode="numeric" autocomplete="off" placeholder="e.g. 123 456 789">
+            </div>
+            <div class="field">
+              <label>Tax offsets and variations</label>
+              <div class="choice-group">
+                <label><input type="checkbox" name="tax_free_threshold" value="Yes"> Claim the tax-free threshold</label>
+                <label><input type="checkbox" name="study_loan" value="Yes"> I have a study or training support loan (HELP/HECS, VSL, etc.)</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <h3>Bank account</h3>
+            <p class="sub">Where your pay is deposited.</p>
+            <div class="field">
+              <label for="ob-bank-name">Account name</label>
+              <input id="ob-bank-name" name="bank_account_name" type="text" required>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="ob-bsb">BSB</label>
+                <input id="ob-bsb" name="bank_bsb" type="text" inputmode="numeric" placeholder="123-456" required>
+              </div>
+              <div class="field">
+                <label for="ob-acc">Account number</label>
+                <input id="ob-acc" name="bank_account_number" type="text" inputmode="numeric" required>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <h3>Superannuation details</h3>
+            <div class="field">
+              <label for="ob-super-fund">Superannuation fund</label>
+              <input id="ob-super-fund" name="super_fund" type="text" required>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="ob-super-member">Membership number</label>
+                <input id="ob-super-member" name="super_member_number" type="text">
+              </div>
+              <div class="field">
+                <label for="ob-super-usi">Fund USI</label>
+                <input id="ob-super-usi" name="super_usi" type="text">
+              </div>
+            </div>
+          </div>
+
+          <button class="btn btn-blue btn-lg" type="submit" style="width:100%;margin-top:30px">Submit Onboarding Form</button>
+          <div class="form-msg" role="status" aria-live="polite"></div>
+          <p class="privacy-note">Submitted directly to Grandstand's gym management for payroll setup only.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-bottom" style="border-top:0;margin-top:0;padding-top:0">
+      <span>© <span data-year>2026</span> Go Unbroken Pty Ltd trading as Grandstand CrossFit</span>
+      <span>92 Parry Street, Perth WA 6000</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/js/main.js?v=4" defer></script>
+</body>
+</html>
