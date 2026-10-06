@@ -12,6 +12,9 @@ exports.handler = async function (event) {
     if (formName === "onboard") {
       return await relayOnboardForm(d);
     }
+    if (formName === "christmas-party") {
+      return await relayChristmasPartyForm(d);
+    }
 
     const isMeta = formName === "meta-lead" || (d.source || "") === "Meta";
     const isJoin = (d.start || "").toLowerCase().includes("get started");
@@ -84,5 +87,31 @@ async function relayOnboardForm(d) {
   });
   const out = await res.text();
   console.log("onboard relay:", res.status, out.slice(0, 300));
+  return { statusCode: 200, body: "ok" };
+}
+
+// Christmas Party ticket bookings — goes to the general lead inbox, with
+// "Christmas Party" in the subject so it's easy to spot and action in Wodify.
+async function relayChristmasPartyForm(d) {
+  const tickets = parseInt(d.tickets, 10) || 1;
+  const total = tickets * 80;
+  const res = await fetch("https://formsubmit.co/ajax/" + LEAD_EMAIL, {
+    method: "POST",
+    headers: { "Content-Type": "application/json", Accept: "application/json" },
+    body: JSON.stringify({
+      Event: d.event || "2026 Christmas Party",
+      Name: d.name || "-",
+      Mobile: d.phone || "-",
+      Email: d.email || "-",
+      Tickets: tickets,
+      "Total due": "$" + total + " AUD",
+      Note: "Add these tickets to the member's Wodify account.",
+      _subject: "Christmas Party — " + (d.name || "Website") + " (" + tickets + " ticket" + (tickets === 1 ? "" : "s") + ")",
+      _template: "table",
+      _captcha: "false"
+    })
+  });
+  const out = await res.text();
+  console.log("christmas-party relay:", res.status, out.slice(0, 300));
   return { statusCode: 200, body: "ok" };
 }

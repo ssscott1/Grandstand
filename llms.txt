@@ -74,5 +74,6 @@ drop-ins are welcome, and visitors can join any class.
 - [Plans](https://grandstandcrossfit.com.au/pricing.html): memberships and drop-in prices
 - [About](https://grandstandcrossfit.com.au/about.html): story, team and values
 - [Contact](https://grandstandcrossfit.com.au/contact.html): location, hours, drop-in booking
+- [Events](https://grandstandcrossfit.com.au/events.html): members' 2026 Christmas Party, 90's theme, 28 Nov 2026
 
-Last updated: 2026-09-21
+Last updated: 2026-10-06
