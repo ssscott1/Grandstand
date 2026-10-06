@@ -80,11 +80,6 @@
   to = "/events-thanks.html"
   status = 200
 [[redirects]]
-  from = "/events-thanks"
-  to = "/events-thanks.html"
-  status = 200
-  status = 200
-[[redirects]]
   from = "/group-training"
   to = "/group-fitness.html"
   status = 301
