@@ -22,36 +22,59 @@ exports.handler = async function (event) {
       ? "META LEAD — Free Trial"
       : isJoin ? "Get Started Enquiry" : "Free Trial Enquiry";
     const isKids = /kids/i.test(d.program || "");
-    const params = new URLSearchParams({
-      "Enquiry type": subjectType,
-      "Lead source": isMeta
-        ? "Meta ad" + ((c => c ? " (" + c + ")" : "")([d.utm_campaign, d.utm_content].filter(Boolean).join(" / ")))
-        : "Website",
-      "Chosen plan": d.plan || "-",
-      Name: d.name || "-",
-      Mobile: d.phone || "-",
-      Email: d.email || "-",
-      email: d.email || "-",
-      "Interested in": d.program || "-",
-      Goal: d.goal || "-",
-      _subject: subjectType + " — " + (d.name || "Website"),
-      _template: "table",
-      _captcha: "false"
-    });
-    // Every enquiry type gets the "book your first session" auto-reply except
-    // Kids Fitness enquiries, which are handled by a separate follow-up.
-    if (!isKids && d.email) {
-      params.set("_autoresponse", freeTrialAutoresponseEmail(d.name));
-    }
-    // Plain (non-ajax) endpoint is required here: FormSubmit's _autoresponse
-    // feature is documented to not fire on the JSON /ajax/ endpoint.
-    const res = await fetch("https://formsubmit.co/" + LEAD_EMAIL, {
+
+    // Internal lead notification — the original, proven setup: AJAX endpoint
+    // + _captcha:false delivers instantly with nobody around to click a
+    // captcha. Left exactly as it was before the auto-reply was added.
+    const res = await fetch("https://formsubmit.co/ajax/" + LEAD_EMAIL, {
       method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: params.toString()
+      headers: { "Content-Type": "application/json", Accept: "application/json" },
+      body: JSON.stringify({
+        "Enquiry type": subjectType,
+        "Lead source": isMeta
+          ? "Meta ad" + ((c => c ? " (" + c + ")" : "")([d.utm_campaign, d.utm_content].filter(Boolean).join(" / ")))
+          : "Website",
+        "Chosen plan": d.plan || "-",
+        Name: d.name || "-",
+        Mobile: d.phone || "-",
+        Email: d.email || "-",
+        "Interested in": d.program || "-",
+        Goal: d.goal || "-",
+        _subject: subjectType + " — " + (d.name || "Website"),
+        _template: "table",
+        _captcha: "false"
+      })
     });
     const out = await res.text();
     console.log("formsubmit relay:", res.status, out.slice(0, 300));
+
+    // Customer-facing auto-reply — every enquiry type except Kids Fitness.
+    // This has to be a second, separate request: FormSubmit's _autoresponse
+    // feature only fires on the plain (non-ajax) endpoint, and only when
+    // _captcha isn't set to "false" — both of which conflict with what the
+    // internal notification above needs. The tradeoff is that this request
+    // also drops its own (lighter, clearly-labelled) copy into the lead
+    // inbox, since FormSubmit always emails the form owner on every hit.
+    if (!isKids && d.email) {
+      const arParams = new URLSearchParams({
+        Name: d.name || "-",
+        email: d.email,
+        Note: "This is the auto-reply trigger request — the real content went to the enquirer.",
+        _subject: "(auto-reply sent) " + subjectType + " — " + (d.name || "Website"),
+        _autoresponse: freeTrialAutoresponseEmail(d.name)
+      });
+      const arRes = await fetch("https://formsubmit.co/" + LEAD_EMAIL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+          Referer: "https://grandstandcrossfit.com.au/"
+        },
+        body: arParams.toString()
+      });
+      const arOut = await arRes.text();
+      console.log("autoresponse trigger:", arRes.status, arOut.slice(0, 300));
+    }
+
     return { statusCode: 200, body: "ok" };
   } catch (e) {
     console.error("relay failed:", e && e.message);
