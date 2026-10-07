@@ -21,24 +21,34 @@ exports.handler = async function (event) {
     const subjectType = isMeta
       ? "META LEAD — Free Trial"
       : isJoin ? "Get Started Enquiry" : "Free Trial Enquiry";
-    const res = await fetch("https://formsubmit.co/ajax/" + LEAD_EMAIL, {
+    const isKids = /kids/i.test(d.program || "");
+    const params = new URLSearchParams({
+      "Enquiry type": subjectType,
+      "Lead source": isMeta
+        ? "Meta ad" + ((c => c ? " (" + c + ")" : "")([d.utm_campaign, d.utm_content].filter(Boolean).join(" / ")))
+        : "Website",
+      "Chosen plan": d.plan || "-",
+      Name: d.name || "-",
+      Mobile: d.phone || "-",
+      Email: d.email || "-",
+      email: d.email || "-",
+      "Interested in": d.program || "-",
+      Goal: d.goal || "-",
+      _subject: subjectType + " — " + (d.name || "Website"),
+      _template: "table",
+      _captcha: "false"
+    });
+    // Every enquiry type gets the "book your first session" auto-reply except
+    // Kids Fitness enquiries, which are handled by a separate follow-up.
+    if (!isKids && d.email) {
+      params.set("_autoresponse", freeTrialAutoresponseEmail(d.name));
+    }
+    // Plain (non-ajax) endpoint is required here: FormSubmit's _autoresponse
+    // feature is documented to not fire on the JSON /ajax/ endpoint.
+    const res = await fetch("https://formsubmit.co/" + LEAD_EMAIL, {
       method: "POST",
-      headers: { "Content-Type": "application/json", Accept: "application/json" },
-      body: JSON.stringify({
-        "Enquiry type": subjectType,
-        "Lead source": isMeta
-          ? "Meta ad" + ((c => c ? " (" + c + ")" : "")([d.utm_campaign, d.utm_content].filter(Boolean).join(" / ")))
-          : "Website",
-        "Chosen plan": d.plan || "-",
-        Name: d.name || "-",
-        Mobile: d.phone || "-",
-        Email: d.email || "-",
-        "Interested in": d.program || "-",
-        Goal: d.goal || "-",
-        _subject: subjectType + " — " + (d.name || "Website"),
-        _template: "table",
-        _captcha: "false"
-      })
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: params.toString()
     });
     const out = await res.text();
     console.log("formsubmit relay:", res.status, out.slice(0, 300));
@@ -114,4 +124,32 @@ async function relayChristmasPartyForm(d) {
   const out = await res.text();
   console.log("christmas-party relay:", res.status, out.slice(0, 300));
   return { statusCode: 200, body: "ok" };
+}
+
+// Auto-reply sent straight to the enquirer's own inbox, telling them how to
+// book their first class and sign the waiver. Not sent for Kids Fitness
+// enquiries (program contains "Kids"), which get a different follow-up.
+function freeTrialAutoresponseEmail(name) {
+  const firstName = (name || "").trim().split(/\s+/)[0] || "there";
+  return `Hi ${firstName},
+
+Thanks for getting in touch, we're really glad you're keen to try GrandStand CrossFit.
+
+Pick a day and time for your first trial session by clicking the following link
+
+https://grandstandcrossfit.wodify.com/OnlineSalesPage/Main?q=Classes%7CLocationId%3D2172%26OnlineMembershipId%3D17676
+
+We give you 3 free trial sessions, to be completed within 7 days of your first class. You can book your second and third class when you come to the gym. Spots fill up quickly, so the sooner you book, the better your pick of times.
+
+One quick thing before you come in. Please complete our athlete waiver before your first session. It only takes a couple of minutes:
+https://app.wodify.com/Token/SignWaiver?WaiverToken=458F773D3C305022CE1F7984B7D7CB84B7435EB8BD06DC4CB09A83D57797C3BF
+
+We will be in touch soon to follow up and make sure you're all set. In the meantime, if you have any questions, reply to this email or call me on 0411 371 661.
+
+We can't wait to meet you!
+
+Cheers,
+Shez Lee
+GrandStand CrossFit
+0411 371 661`;
 }
