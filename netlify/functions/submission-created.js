@@ -135,14 +135,11 @@ function freeTrialAutoresponseEmail(name) {
 
 Thanks for getting in touch, we're really glad you're keen to try GrandStand CrossFit.
 
-Pick a day and time for your first trial session by clicking the following link
-
-https://grandstandcrossfit.wodify.com/OnlineSalesPage/Main?q=Classes%7CLocationId%3D2172%26OnlineMembershipId%3D17676
+Pick a day and time for your first trial session: <a href="https://grandstandcrossfit.wodify.com/OnlineSalesPage/Main?q=Classes%7CLocationId%3D2172%26OnlineMembershipId%3D17676">Book your first session</a>
 
 We give you 3 free trial sessions, to be completed within 7 days of your first class. You can book your second and third class when you come to the gym. Spots fill up quickly, so the sooner you book, the better your pick of times.
 
-One quick thing before you come in. Please complete our athlete waiver before your first session. It only takes a couple of minutes:
-https://app.wodify.com/Token/SignWaiver?WaiverToken=458F773D3C305022CE1F7984B7D7CB84B7435EB8BD06DC4CB09A83D57797C3BF
+One quick thing before you come in. Please complete our athlete waiver before your first session — it only takes a couple of minutes: <a href="https://app.wodify.com/Token/SignWaiver?WaiverToken=458F773D3C305022CE1F7984B7D7CB84B7435EB8BD06DC4CB09A83D57797C3BF">Sign the waiver</a>
 
 We will be in touch soon to follow up and make sure you're all set. In the meantime, if you have any questions, reply to this email or call me on 0411 371 661.
 
