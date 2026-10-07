@@ -49,30 +49,30 @@ exports.handler = async function (event) {
     console.log("formsubmit relay:", res.status, out.slice(0, 300));
 
     // Customer-facing auto-reply — every enquiry type except Kids Fitness.
-    // This has to be a second, separate request: FormSubmit's _autoresponse
-    // feature only fires on the plain (non-ajax) endpoint, and only when
-    // _captcha isn't set to "false" — both of which conflict with what the
-    // internal notification above needs. The tradeoff is that this request
-    // also drops its own (lighter, clearly-labelled) copy into the lead
-    // inbox, since FormSubmit always emails the form owner on every hit.
-    if (!isKids && d.email) {
-      const arParams = new URLSearchParams({
-        Name: d.name || "-",
-        email: d.email,
-        Note: "This is the auto-reply trigger request — the real content went to the enquirer.",
-        _subject: "(auto-reply sent) " + subjectType + " — " + (d.name || "Website"),
-        _autoresponse: freeTrialAutoresponseEmail(d.name)
-      });
-      const arRes = await fetch("https://formsubmit.co/" + LEAD_EMAIL, {
+    // Sent directly via Resend rather than FormSubmit: FormSubmit's
+    // _autoresponse feature needs a real solved reCAPTCHA from an actual
+    // browser to release an email to a third-party inbox, which a
+    // server-to-server call can never provide — confirmed by two live tests
+    // where the internal notification above went through but this did not.
+    if (!isKids && d.email && process.env.RESEND_API_KEY) {
+      const { html, text } = freeTrialAutoresponseContent(d.name);
+      const emailRes = await fetch("https://api.resend.com/emails", {
         method: "POST",
         headers: {
-          "Content-Type": "application/x-www-form-urlencoded",
-          Referer: "https://grandstandcrossfit.com.au/"
+          "Content-Type": "application/json",
+          Authorization: "Bearer " + process.env.RESEND_API_KEY
         },
-        body: arParams.toString()
+        body: JSON.stringify({
+          from: "Grandstand CrossFit <onboarding@resend.dev>",
+          to: [d.email],
+          reply_to: LEAD_EMAIL,
+          subject: "Book your free trial at GrandStand CrossFit",
+          html,
+          text
+        })
       });
-      const arOut = await arRes.text();
-      console.log("autoresponse trigger:", arRes.status, arOut.slice(0, 300));
+      const emailOut = await emailRes.text();
+      console.log("resend autoresponse:", emailRes.status, emailOut.slice(0, 300));
     }
 
     return { statusCode: 200, body: "ok" };
@@ -152,17 +152,20 @@ async function relayChristmasPartyForm(d) {
 // Auto-reply sent straight to the enquirer's own inbox, telling them how to
 // book their first class and sign the waiver. Not sent for Kids Fitness
 // enquiries (program contains "Kids"), which get a different follow-up.
-function freeTrialAutoresponseEmail(name) {
+function freeTrialAutoresponseContent(name) {
   const firstName = (name || "").trim().split(/\s+/)[0] || "there";
-  return `Hi ${firstName},
+  const bookUrl = "https://grandstandcrossfit.wodify.com/OnlineSalesPage/Main?q=Classes%7CLocationId%3D2172%26OnlineMembershipId%3D17676";
+  const waiverUrl = "https://app.wodify.com/Token/SignWaiver?WaiverToken=458F773D3C305022CE1F7984B7D7CB84B7435EB8BD06DC4CB09A83D57797C3BF";
+
+  const text = `Hi ${firstName},
 
 Thanks for getting in touch, we're really glad you're keen to try GrandStand CrossFit.
 
-Pick a day and time for your first trial session: <a href="https://grandstandcrossfit.wodify.com/OnlineSalesPage/Main?q=Classes%7CLocationId%3D2172%26OnlineMembershipId%3D17676">Book your first session</a>
+Pick a day and time for your first trial session: ${bookUrl}
 
 We give you 3 free trial sessions, to be completed within 7 days of your first class. You can book your second and third class when you come to the gym. Spots fill up quickly, so the sooner you book, the better your pick of times.
 
-One quick thing before you come in. Please complete our athlete waiver before your first session — it only takes a couple of minutes: <a href="https://app.wodify.com/Token/SignWaiver?WaiverToken=458F773D3C305022CE1F7984B7D7CB84B7435EB8BD06DC4CB09A83D57797C3BF">Sign the waiver</a>
+One quick thing before you come in. Please complete our athlete waiver before your first session — it only takes a couple of minutes: ${waiverUrl}
 
 We will be in touch soon to follow up and make sure you're all set. In the meantime, if you have any questions, reply to this email or call me on 0411 371 661.
 
@@ -172,4 +175,17 @@ Cheers,
 Shez Lee
 GrandStand CrossFit
 0411 371 661`;
+
+  const html = `<div style="font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.6;color:#141314">
+<p>Hi ${firstName},</p>
+<p>Thanks for getting in touch, we're really glad you're keen to try GrandStand CrossFit.</p>
+<p>Pick a day and time for your first trial session: <a href="${bookUrl}" style="color:#00ADEF;font-weight:bold">Book your first session</a></p>
+<p>We give you 3 free trial sessions, to be completed within 7 days of your first class. You can book your second and third class when you come to the gym. Spots fill up quickly, so the sooner you book, the better your pick of times.</p>
+<p>One quick thing before you come in. Please complete our athlete waiver before your first session — it only takes a couple of minutes: <a href="${waiverUrl}" style="color:#00ADEF;font-weight:bold">Sign the waiver</a></p>
+<p>We will be in touch soon to follow up and make sure you're all set. In the meantime, if you have any questions, reply to this email or call me on 0411 371 661.</p>
+<p>We can't wait to meet you!</p>
+<p>Cheers,<br>Shez Lee<br>GrandStand CrossFit<br>0411 371 661</p>
+</div>`;
+
+  return { html, text };
 }
