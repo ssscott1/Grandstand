@@ -3,7 +3,7 @@
 const LEAD_EMAIL = "info@grandstandcrossfit.com.au";
 const ONBOARD_EMAIL = "shez@grandstandcrossfit.com.au";
 
-exports.handler = async function (event) {
+export async function handler(event) {
   try {
     const body = JSON.parse(event.body || "{}");
     const d = (body.payload && body.payload.data) || {};
