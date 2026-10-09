@@ -28,11 +28,14 @@ export async function handler(event) {
     };
     if (res.ok && q.create === "yes") {
       const m = text.match(/"id"\s*:\s*(\d+)/);
+      const nm = (q.name || "Claude Test Lead (delete me)").trim();
+      const sp = nm.indexOf(" ");
       const body = JSON.stringify({
         location_id: "__LOC__",
-        first_name: "Claude",
-        last_name: "Test Lead (delete me)",
-        email: "claude-test@example.com",
+        first_name: sp === -1 ? nm : nm.slice(0, sp),
+        last_name: sp === -1 ? "" : nm.slice(sp + 1),
+        email: q.email || "claude-test@example.com",
+        phone_number: q.phone || undefined,
         notes: "Diagnostic test lead - safe to delete"
       }).replace('"__LOC__"', m[1]);
       const r2 = await fetch("https://api.wodify.com/v1/leads", {
