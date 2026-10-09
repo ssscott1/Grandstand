@@ -16,9 +16,6 @@ export async function handler(event) {
       return await relayChristmasPartyForm(d);
     }
 
-    // Also create the lead in Wodify (never blocks the emails below).
-    await createWodifyLead(d, formName);
-
     const isMeta = formName === "meta-lead" || (d.source || "") === "Meta";
     const isJoin = (d.start || "").toLowerCase().includes("get started");
     const subjectType = isMeta
@@ -193,57 +190,3 @@ GrandStand CrossFit
   return { html, text };
 }
 
-// Creates a lead in Wodify via its API. Any failure is logged and ignored so
-// the normal email notifications are never affected.
-// Needs the WODIFY_API_KEY environment variable in Netlify. Optional:
-// WODIFY_LOCATION_ID and WODIFY_LEAD_STATUS_ID. Wodify IDs are huge numbers,
-// so they are kept as text and never converted to JavaScript numbers.
-async function createWodifyLead(d, formName) {
-  try {
-    const apiKey = process.env.WODIFY_API_KEY;
-    if (!apiKey) {
-      console.error("wodify: WODIFY_API_KEY not set");
-      return;
-    }
-    let locationId = process.env.WODIFY_LOCATION_ID;
-    if (!locationId) {
-      const locRes = await fetch("https://api.wodify.com/v1/customers/locations", {
-        headers: { "x-api-key": apiKey }
-      });
-      const locText = await locRes.text();
-      const m = locText.match(/"id"\s*:\s*(\d+)/);
-      if (!locRes.ok || !m) {
-        console.error("wodify: location lookup failed:", locRes.status, locText.slice(0, 300));
-        return;
-      }
-      locationId = m[1];
-    }
-    const fullName = (d.name || "").trim();
-    const space = fullName.indexOf(" ");
-    const body = {
-      location_id: "__LOCATION__",
-      first_name: space === -1 ? fullName : fullName.slice(0, space),
-      last_name: space === -1 ? "" : fullName.slice(space + 1).trim(),
-      email: d.email || undefined,
-      phone_number: d.phone || undefined,
-      notes: [
-        "Source: website form (" + (formName || "free-trial") + ")",
-        d.program && "Program: " + d.program,
-        d.goal && "Goal: " + d.goal,
-        d.start && "Preferred start: " + d.start,
-        d.plan && "Plan interest: " + d.plan
-      ].filter(Boolean).join("\n")
-    };
-    if (process.env.WODIFY_LEAD_STATUS_ID) body.lead_status_id = "__STATUS__";
-    const res = await fetch("https://api.wodify.com/v1/leads", {
-      method: "POST",
-      headers: { "Content-Type": "application/json", "x-api-key": apiKey },
-      body: JSON.stringify(body)
-        .replace('"__LOCATION__"', locationId)
-        .replace('"__STATUS__"', process.env.WODIFY_LEAD_STATUS_ID || "null")
-    });
-    console.log("wodify lead:", res.status, (await res.text()).slice(0, 300));
-  } catch (e) {
-    console.error("wodify failed:", e && e.message);
-  }
-}
