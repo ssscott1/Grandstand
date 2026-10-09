@@ -17,6 +17,8 @@ export async function handler(event) {
     const parsed = JSON.parse(event.body || "{}");
     const sub = parsed.payload || parsed;
     const d = sub.data || {};
+    const email = d.email || sub.email;
+    const dbg = "Webhook fields: " + Object.keys(sub).join(",") + " | data fields: " + Object.keys(d).join(",");
     const formName = sub.form_name || "free-trial";
 
     let locationId = process.env.WODIFY_LOCATION_ID;
@@ -30,16 +32,17 @@ export async function handler(event) {
       locationId = m[1];
     }
 
-    const fullName = (d.name || "").trim();
+    const fullName = (d.name || sub.name || "Unknown (website form)").trim();
     const space = fullName.indexOf(" ");
     const body = {
       location_id: "__LOCATION__",
       first_name: space === -1 ? fullName : fullName.slice(0, space),
       last_name: space === -1 ? "" : fullName.slice(space + 1).trim(),
-      email: d.email || undefined,
+      email: email || undefined,
       phone_number: d.phone || undefined,
       notes: [
         "Source: website form (" + formName + ")",
+        dbg,
         d.program && "Program: " + d.program,
         d.goal && "Goal: " + d.goal,
         d.start && "Preferred start: " + d.start,
