@@ -2,9 +2,6 @@
 // Relays the details as an email via FormSubmit.
 const LEAD_EMAIL = "info@grandstandcrossfit.com.au";
 const ONBOARD_EMAIL = "shez@grandstandcrossfit.com.au";
-// Same Wodify location every existing booking link on this site already
-// points at (see the LocationId=2172 query param used throughout).
-const WODIFY_LOCATION_ID = 2172;
 
 export async function handler(event) {
   try {
@@ -50,12 +47,6 @@ export async function handler(event) {
     });
     const out = await res.text();
     console.log("formsubmit relay:", res.status, out.slice(0, 300));
-
-    // Create the prospect directly in Wodify's own Leads CRM, so staff don't
-    // have to re-key every website enquiry by hand. Never lets a Wodify
-    // failure take down the email notification above or the auto-reply
-    // below — it's strictly additive.
-    await pushLeadToWodify(d);
 
     // Customer-facing auto-reply — every enquiry type except Kids Fitness.
     // Sent directly via Resend rather than FormSubmit: FormSubmit's
@@ -156,49 +147,6 @@ async function relayChristmasPartyForm(d) {
   const out = await res.text();
   console.log("christmas-party relay:", res.status, out.slice(0, 300));
   return { statusCode: 200, body: "ok" };
-}
-
-// Pushes a website enquiry into Wodify's Leads CRM via its public API
-// (POST https://api.wodify.com/v1/leads, auth via the x-api-key header).
-// Best-effort only: logs the result but never throws, so a Wodify outage or
-// API change can't break the email notification/auto-reply either side of
-// this call.
-async function pushLeadToWodify(d) {
-  if (!process.env.WODIFY_API_KEY) {
-    console.log("wodify lead push: skipped, WODIFY_API_KEY not set");
-    return;
-  }
-  try {
-    const { first, last } = splitName(d.name);
-    const res = await fetch("https://api.wodify.com/v1/leads", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "x-api-key": process.env.WODIFY_API_KEY
-      },
-      body: JSON.stringify({
-        location_id: WODIFY_LOCATION_ID,
-        first_name: first,
-        last_name: last,
-        email: d.email || "",
-        phone_number: d.phone || ""
-      })
-    });
-    const out = await res.text();
-    console.log("wodify lead push:", res.status, out.slice(0, 300));
-  } catch (e) {
-    console.error("wodify lead push failed:", e && e.message);
-  }
-}
-
-// Splits a submitted "name" field into first/last for Wodify's Leads API.
-// Several of the site's lead forms only ask for a first name, so this
-// always returns something usable even with a single-word name.
-function splitName(fullName) {
-  const parts = (fullName || "").trim().split(/\s+/).filter(Boolean);
-  if (parts.length === 0) return { first: "Website", last: "Lead" };
-  if (parts.length === 1) return { first: parts[0], last: "-" };
-  return { first: parts[0], last: parts.slice(1).join(" ") };
 }
 
 // Auto-reply sent straight to the enquirer's own inbox, telling them how to
