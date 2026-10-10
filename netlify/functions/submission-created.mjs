@@ -6,7 +6,7 @@ const ONBOARD_EMAIL = "shez@grandstandcrossfit.com.au";
 // points at (see the LocationId=2172 query param used throughout).
 const WODIFY_LOCATION_ID = 2172;
 
-exports.handler = async function (event) {
+export async function handler(event) {
   try {
     const body = JSON.parse(event.body || "{}");
     const d = (body.payload && body.payload.data) || {};
@@ -241,3 +241,4 @@ GrandStand CrossFit
 
   return { html, text };
 }
+
