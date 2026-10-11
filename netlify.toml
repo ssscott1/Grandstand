@@ -119,3 +119,7 @@
   from = "/drop-in"
   to = "/drop-in.html"
   status = 200
+[[redirects]]
+  from = "/gymnastics"
+  to = "/gymnastics.html"
+  status = 200
