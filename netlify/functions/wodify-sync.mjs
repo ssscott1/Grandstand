@@ -12,9 +12,15 @@
 // email that is already there.
 //
 // Environment variables needed:
-//   NETLIFY_API_TOKEN  — Netlify personal access token (reads form submissions).
-//                        NOT YET SET — every run currently exits early at the
-//                        "missing config" check below until this is added.
+//   FORMS_READ_TOKEN   — Netlify personal access token (reads form submissions).
+//                        Named this instead of NETLIFY_API_TOKEN /
+//                        NETLIFY_*: Netlify silently refuses to persist any
+//                        env var starting with NETLIFY_ when it's marked
+//                        secret — the write API reports success but the
+//                        value never actually saves. Confirmed 13 Oct 2026
+//                        after three different NETLIFY_*-prefixed names all
+//                        failed the same way; a non-prefixed name saved
+//                        immediately.
 //   WODIFY_API_KEY     — already set, used by wodify-lead
 // Optional:
 //   WODIFY_LOCATION_ID — set to 2023 (Wodify support confirmed this is our
@@ -34,7 +40,7 @@ const LEAD_FORMS = ["free-trial", "meta-lead"];
 const WINDOW_MS = 2 * 60 * 60 * 1000;
 
 export default async function () {
-  const netlifyToken = process.env.NETLIFY_API_TOKEN;
+  const netlifyToken = process.env.FORMS_READ_TOKEN;
   const apiKey = process.env.WODIFY_API_KEY;
   const siteId = process.env.SITE_ID || process.env.NETLIFY_SITE_ID;
 
