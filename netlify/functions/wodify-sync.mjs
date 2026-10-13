@@ -23,12 +23,41 @@
 //                        immediately.
 //   WODIFY_API_KEY     — already set, used by wodify-lead
 // Optional:
-//   WODIFY_LOCATION_ID — set to 2023 (Wodify support confirmed this is our
-//                        account's Tenant ID, 13 Oct 2026)
+//   WODIFY_LOCATION_ID — NOT currently set. Wodify support said 2023 was our
+//                        "Tenant ID" (13 Oct 2026), but the Leads API
+//                        rejected it: {"HTTPCode":422,"MoreInfo":"Location
+//                        with Id 2023 not found or inactive."} — Tenant ID
+//                        and location_id are apparently different things.
+//                        Left unset so the code falls back to looking up
+//                        real locations below; check the logs for what that
+//                        returns before setting this again.
 //   WODIFY_LEAD_STATUS_ID — already set, used by wodify-lead
 //   NETLIFY_SITE_ID    — only needed if Netlify stops providing SITE_ID at runtime
+//
+// IMPORTANT: Wodify's API returns HTTP 200 even for request-level errors —
+// the real outcome is in the JSON body ({"HTTPCode":422,...} etc). Every
+// response from Wodify must be checked with wodifyOk() below, never res.ok
+// alone, or failures get silently logged and counted as successes.
 
 export const config = { schedule: "*/5 * * * *" };
+
+// Wodify wraps real errors in an HTTP 200, e.g.
+// {"HTTPCode":422,"ErrorCode":"422","MoreInfo":"Location with Id 2023 not
+// found or inactive."} — so a 2xx transport status alone does not mean the
+// request succeeded. This checks both.
+function wodifyOk(status, text) {
+  if (status < 200 || status >= 300) return false;
+  try {
+    const parsed = JSON.parse(text);
+    if (parsed && typeof parsed === "object" && !Array.isArray(parsed)) {
+      if (typeof parsed.HTTPCode === "number" && (parsed.HTTPCode < 200 || parsed.HTTPCode >= 300)) return false;
+      if (parsed.ErrorCode) return false;
+    }
+  } catch (e) {
+    // Not JSON (or not an object) — nothing more to check, HTTP status stands.
+  }
+  return true;
+}
 
 // Forms that should produce a Wodify lead. The onboard and christmas-party
 // forms deliberately stay out of this — they are not enquiries.
@@ -106,13 +135,13 @@ export default async function () {
       continue;
     }
 
-    const status = await createLead(apiKey, locationId, d, submission.form_name);
-    if (status >= 200 && status < 300) {
+    const result = await createLead(apiKey, locationId, d, submission.form_name);
+    if (result.ok) {
       created++;
       if (email) known.add(email); // guard against two submissions in one run
       console.log("wodify-sync: created lead for", submission.form_name, email || "(no email)");
     } else {
-      console.error("wodify-sync: create failed", status, email || "(no email)");
+      console.error("wodify-sync: create failed", result.status, result.text.slice(0, 300), email || "(no email)");
     }
   }
 
@@ -128,7 +157,7 @@ async function recentLeadEmails(apiKey) {
       headers: { "x-api-key": apiKey }
     });
     const text = await res.text();
-    if (!res.ok) {
+    if (!wodifyOk(res.status, text)) {
       console.error("wodify-sync: leads list", res.status, text.slice(0, 200));
       return null;
     }
@@ -148,8 +177,12 @@ async function lookupLocationId(apiKey) {
     headers: { "x-api-key": apiKey }
   });
   const text = await res.text();
+  // Always logged, success or not — this is how we find the real location_id
+  // now that the "Tenant ID" Wodify gave us (2023) turned out to be wrong.
+  console.log("wodify-sync: locations lookup", res.status, text.slice(0, 1000));
+  if (!wodifyOk(res.status, text)) return null;
   const m = text.match(/"id"\s*:\s*(\d+)/);
-  return res.ok && m ? m[1] : null;
+  return m ? m[1] : null;
 }
 
 // Mirrors wodify-lead.mjs so a lead looks the same however it got here.
@@ -186,10 +219,9 @@ async function createLead(apiKey, locationId, d, formName) {
     body: sentBody
   });
   const resText = await res.text();
-  // Logged either way now — a 2xx status alone doesn't prove the lead is
-  // visible where staff expect it, so the full response (lead id, location,
-  // status) matters even on "success".
+  // Logged either way — Wodify returns HTTP 200 even for rejected requests,
+  // so the body is the only place the real outcome shows up.
   console.log("wodify-sync: sent", sentBody);
   console.log("wodify-sync: wodify replied", res.status, resText.slice(0, 500));
-  return res.status;
+  return { ok: wodifyOk(res.status, resText), status: res.status, text: resText };
 }

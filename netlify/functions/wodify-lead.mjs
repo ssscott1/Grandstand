@@ -4,11 +4,30 @@
 // Needs WODIFY_API_KEY. Optional: WODIFY_LOCATION_ID, WODIFY_LEAD_STATUS_ID.
 // Wodify IDs are huge numbers, so they are kept as text, never as numbers.
 //
-// WODIFY_LOCATION_ID is now set to 2023 — Wodify support confirmed this is
-// our account's Tenant ID (13 Oct 2026). The /v1/customers/locations lookup
-// below only runs as a fallback if that env var is ever unset; it's a loose
-// regex match on the first "id" in the response, so it's not trustworthy as
-// the primary source of this value.
+// WODIFY_LOCATION_ID is NOT currently set. Wodify support said 2023 was our
+// "Tenant ID" (13 Oct 2026), but the Leads API rejected it:
+// {"HTTPCode":422,"MoreInfo":"Location with Id 2023 not found or
+// inactive."} — Tenant ID and location_id are apparently different things.
+// Falls back to the /v1/customers/locations lookup below until we have a
+// confirmed-correct value.
+//
+// IMPORTANT: Wodify's API returns HTTP 200 even for request-level errors —
+// the real outcome is in the JSON body ({"HTTPCode":422,...} etc). Always
+// check wodifyOk(), never res.ok alone, or failures look like successes.
+function wodifyOk(status, text) {
+  if (status < 200 || status >= 300) return false;
+  try {
+    const parsed = JSON.parse(text);
+    if (parsed && typeof parsed === "object" && !Array.isArray(parsed)) {
+      if (typeof parsed.HTTPCode === "number" && (parsed.HTTPCode < 200 || parsed.HTTPCode >= 300)) return false;
+      if (parsed.ErrorCode) return false;
+    }
+  } catch (e) {
+    // Not JSON (or not an object) — nothing more to check, HTTP status stands.
+  }
+  return true;
+}
+
 export async function handler(event) {
   const reply = (statusCode, text) => ({ statusCode, body: text });
   try {
@@ -33,8 +52,9 @@ export async function handler(event) {
         headers: { "x-api-key": apiKey }
       });
       const locText = await locRes.text();
+      console.log("wodify-lead: locations lookup", locRes.status, locText.slice(0, 1000));
       const m = locText.match(/"id"\s*:\s*(\d+)/);
-      if (!locRes.ok || !m) return reply(502, "location lookup failed: " + locRes.status);
+      if (!wodifyOk(locRes.status, locText) || !m) return reply(502, "location lookup failed: " + locRes.status);
       locationId = m[1];
     }
 
@@ -57,16 +77,18 @@ export async function handler(event) {
     };
     if (process.env.WODIFY_LEAD_STATUS_ID) body.lead_status_id = "__STATUS__";
 
+    const sentBody = JSON.stringify(body)
+      .replace('"__LOCATION__"', locationId)
+      .replace('"__STATUS__"', process.env.WODIFY_LEAD_STATUS_ID || "null");
     const res = await fetch("https://api.wodify.com/v1/leads", {
       method: "POST",
       headers: { "Content-Type": "application/json", "x-api-key": apiKey },
-      body: JSON.stringify(body)
-        .replace('"__LOCATION__"', locationId)
-        .replace('"__STATUS__"', process.env.WODIFY_LEAD_STATUS_ID || "null")
+      body: sentBody
     });
     const out = await res.text();
-    console.log("wodify lead:", res.status, out.slice(0, 200));
-    return reply(res.ok ? 200 : 502, "wodify " + res.status);
+    console.log("wodify-lead: sent", sentBody);
+    console.log("wodify-lead: wodify replied", res.status, out.slice(0, 500));
+    return reply(wodifyOk(res.status, out) ? 200 : 502, "wodify " + res.status);
   } catch (e) {
     console.error("wodify-lead failed:", e && e.message);
     return reply(500, "failed");
