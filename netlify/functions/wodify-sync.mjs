@@ -12,10 +12,14 @@
 // email that is already there.
 //
 // Environment variables needed:
-//   NETLIFY_API_TOKEN  — Netlify personal access token (reads form submissions)
+//   NETLIFY_API_TOKEN  — Netlify personal access token (reads form submissions).
+//                        NOT YET SET — every run currently exits early at the
+//                        "missing config" check below until this is added.
 //   WODIFY_API_KEY     — already set, used by wodify-lead
 // Optional:
-//   WODIFY_LOCATION_ID, WODIFY_LEAD_STATUS_ID — already set, used by wodify-lead
+//   WODIFY_LOCATION_ID — set to 2023 (Wodify support confirmed this is our
+//                        account's Tenant ID, 13 Oct 2026)
+//   WODIFY_LEAD_STATUS_ID — already set, used by wodify-lead
 //   NETLIFY_SITE_ID    — only needed if Netlify stops providing SITE_ID at runtime
 
 export const config = { schedule: "*/5 * * * *" };

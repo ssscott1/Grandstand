@@ -3,6 +3,12 @@
 // ?secret=<WODIFY_WEBHOOK_SECRET> (a Netlify environment variable).
 // Needs WODIFY_API_KEY. Optional: WODIFY_LOCATION_ID, WODIFY_LEAD_STATUS_ID.
 // Wodify IDs are huge numbers, so they are kept as text, never as numbers.
+//
+// WODIFY_LOCATION_ID is now set to 2023 — Wodify support confirmed this is
+// our account's Tenant ID (13 Oct 2026). The /v1/customers/locations lookup
+// below only runs as a fallback if that env var is ever unset; it's a loose
+// regex match on the first "id" in the response, so it's not trustworthy as
+// the primary source of this value.
 export async function handler(event) {
   const reply = (statusCode, text) => ({ statusCode, body: text });
   try {
