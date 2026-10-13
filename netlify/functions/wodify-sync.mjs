@@ -23,14 +23,16 @@
 //                        immediately.
 //   WODIFY_API_KEY     — already set, used by wodify-lead
 // Optional:
-//   WODIFY_LOCATION_ID — NOT currently set. Wodify support said 2023 was our
-//                        "Tenant ID" (13 Oct 2026), but the Leads API
-//                        rejected it: {"HTTPCode":422,"MoreInfo":"Location
-//                        with Id 2023 not found or inactive."} — Tenant ID
-//                        and location_id are apparently different things.
-//                        Left unset so the code falls back to looking up
-//                        real locations below; check the logs for what that
-//                        returns before setting this again.
+//   WODIFY_LOCATION_ID — set to 2172, confirmed correct 13 Oct 2026 via a
+//                        real successful lead create (Wodify's own response
+//                        echoed back location_id:2172, location:"Grandstand
+//                        CrossFit"). This is also the same id already used
+//                        throughout this site's Wodify booking links
+//                        (LocationId=2172). Wodify support had earlier given
+//                        us 2023 as our "Tenant ID", which turned out to be
+//                        a different field (customer_id, visible in the
+//                        /v1/customers/locations response) — not the
+//                        location_id the Leads API wants.
 //   WODIFY_LEAD_STATUS_ID — already set, used by wodify-lead
 //   NETLIFY_SITE_ID    — only needed if Netlify stops providing SITE_ID at runtime
 //
