@@ -176,13 +176,20 @@ async function createLead(apiKey, locationId, d, formName) {
   };
   if (process.env.WODIFY_LEAD_STATUS_ID) body.lead_status_id = "__STATUS__";
 
+  const sentBody = JSON.stringify(body)
+    .replace('"__LOCATION__"', locationId)
+    .replace('"__STATUS__"', process.env.WODIFY_LEAD_STATUS_ID || "null");
+
   const res = await fetch("https://api.wodify.com/v1/leads", {
     method: "POST",
     headers: { "Content-Type": "application/json", "x-api-key": apiKey },
-    body: JSON.stringify(body)
-      .replace('"__LOCATION__"', locationId)
-      .replace('"__STATUS__"', process.env.WODIFY_LEAD_STATUS_ID || "null")
+    body: sentBody
   });
-  if (!res.ok) console.error("wodify-sync: wodify said", res.status, (await res.text()).slice(0, 200));
+  const resText = await res.text();
+  // Logged either way now — a 2xx status alone doesn't prove the lead is
+  // visible where staff expect it, so the full response (lead id, location,
+  // status) matters even on "success".
+  console.log("wodify-sync: sent", sentBody);
+  console.log("wodify-sync: wodify replied", res.status, resText.slice(0, 500));
   return res.status;
 }
