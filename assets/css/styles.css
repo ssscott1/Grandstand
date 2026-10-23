@@ -251,6 +251,21 @@ section { padding: 84px 0; }
   background: var(--blue); mix-blend-mode: multiply; opacity: .55; pointer-events: none;
 }
 
+/* ---------- Photo mosaic gallery ---------- */
+.gallery { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 180px; gap: 14px; }
+.gallery figure { margin: 0; position: relative; overflow: hidden; border-radius: 8px; box-shadow: var(--shadow); }
+.gallery img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .35s ease; }
+.gallery figure:hover img { transform: scale(1.05); }
+.gallery .g-big { grid-column: span 2; grid-row: span 2; }
+@media (max-width: 920px) {
+  .gallery { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 160px; }
+  .gallery .g-big { grid-column: span 2; grid-row: span 1; aspect-ratio: 16/10; height: auto; }
+}
+@media (max-width: 560px) {
+  .gallery { grid-template-columns: 1fr; }
+  .gallery .g-big { grid-column: span 1; }
+}
+
 /* ---------- Steps ---------- */
 .step { position: relative; padding: 30px 26px 26px; background: var(--white); border-radius: var(--radius); box-shadow: 0 4px 22px rgba(20,19,20,.08); }
 .step-num {
