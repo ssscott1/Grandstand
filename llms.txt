@@ -72,7 +72,7 @@ is a free trial, casual drop-ins are welcome, and visitors can join any class.
 - [Kids Fitness](https://grandstandcrossfit.com.au/kids.html): children's fitness in 6-week blocks
 - [Programming](https://grandstandcrossfit.com.au/programming.html): training blocks, Terrible Tuesday, coaching team
 - [Timetable](https://grandstandcrossfit.com.au/timetable.html): weekly class schedule
-- [Plans](https://grandstandcrossfit.com.au/pricing.html): memberships and drop-in prices
+- [Memberships](https://grandstandcrossfit.com.au/pricing.html): memberships and drop-in prices
 - [Drop In](https://grandstandcrossfit.com.au/drop-in.html): casual $30 sessions and $80 visitor weeks for travelling CrossFitters and casual locals
 - [About](https://grandstandcrossfit.com.au/about.html): story, team and values
 - [Contact](https://grandstandcrossfit.com.au/contact.html): location, hours, drop-in booking
