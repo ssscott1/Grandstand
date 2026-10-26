@@ -23,15 +23,22 @@
     /* Landing-page-only tweaks: single funnel, nothing to click away to */
     .lp-header .wrap { display:flex; align-items:center; justify-content:space-between; }
     .lp-hero { padding: 46px 0 64px; }
-    .lp-hero .grid-2 { align-items: start; }
     .trust-strip { display:flex; flex-wrap:wrap; gap:10px 26px; margin-top:26px; font-weight:700; font-size:.95rem; letter-spacing:.02em; }
     .trust-strip span { display:inline-flex; align-items:center; gap:8px; }
     .trust-strip .dot { width:8px; height:8px; border-radius:50%; background:var(--blue); display:inline-block; }
     .lp-steps { counter-reset: step; }
     .lp-steps .step h3::before { counter-increment: step; content: counter(step) ". "; color: var(--blue); }
+    /* Hero layout: headline+support stack in the left column, form on the right —
+       but on phones the form comes right after the headline, with the supporting
+       copy (lead/checklist/trust-strip) moved below it. */
+    .hero-grid { display:grid; gap:28px; grid-template-columns: 1fr 1fr; grid-template-areas: "headline form" "support form"; align-items:start; }
+    .hero-headline { grid-area: headline; }
+    .hero-form { grid-area: form; }
+    .hero-support { grid-area: support; }
     @media (max-width: 860px) {
       .lp-hero { padding-top: 30px; }
       .lp-hero .lead { font-size: 1.05rem; }
+      .hero-grid { grid-template-columns: 1fr; grid-template-areas: "headline" "form" "support"; }
     }
     /* Scrolling quote marquee */
     .marquee { overflow: hidden; width: 100%; -webkit-mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent); mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent); }
@@ -79,24 +86,12 @@
 
   <!-- HERO + FORM: the whole pitch and the form, above the fold -->
   <section id="claim" class="section-dark lp-hero">
-    <div class="wrap grid grid-2">
-      <div>
+    <div class="wrap hero-grid">
+      <div class="hero-headline">
         <span class="kicker">Perth CBD · 92 Parry Street, next to HBF Park</span>
         <h1 class="tilt" style="margin-top:10px">Awesome people, expert coaching and great programming. <span class="blue">Come train with us.</span></h1>
-        <p class="lead" style="margin-top:18px">Nervous about walking in? Don't be. Every single person at Grandstand started exactly where you are now. Three real coached classes, completely free — a coach welcomes you in personally and a room full of genuinely lovely people cheers you on from rep one.</p>
-        <ul class="checklist" style="margin-top:22px">
-          <li><strong>Total beginners welcome.</strong> No experience, no fitness level and no excuse is too small — everyone starts somewhere</li>
-          <li><strong>Three classes free.</strong> Your whole first week, no cost, no contract, no card details</li>
-          <li><strong>A genuinely fun, friendly crew.</strong> Most people say the people are the best part — you'll see why</li>
-        </ul>
-        <div class="trust-strip">
-          <span><span aria-hidden="true" style="color:var(--blue)">★★★★★</span> 4.8 on Google</span>
-          <span><span class="dot"></span>79+ reviews</span>
-          <span><span class="dot"></span>12 years coaching Perth</span>
-          <span><span class="dot"></span>Open 7 days</span>
-        </div>
       </div>
-      <div>
+      <div class="hero-form">
         <form class="lead-panel lead-form" name="meta-lead" method="post" action="/start-thanks.html" data-netlify="true" netlify-honeypot="bot-field">
           <input type="hidden" name="form-name" value="meta-lead">
           <p hidden aria-hidden="true"><label>Don't fill this out if you're human: <input name="bot-field"></label></p>
@@ -121,6 +116,20 @@
           <button class="btn btn-blue btn-lg" type="submit" style="width:100%">Get Started</button>
           <p class="privacy-note">We'll only use your details to arrange your free week. No spam, no lock-in, no hard sell.</p>
         </form>
+      </div>
+      <div class="hero-support">
+        <p class="lead" style="margin-top:0">Nervous about walking in? Don't be. Every single person at Grandstand started exactly where you are now. Three real coached classes, completely free — a coach welcomes you in personally and a room full of genuinely lovely people cheers you on from rep one.</p>
+        <ul class="checklist" style="margin-top:22px">
+          <li><strong>Total beginners welcome.</strong> No experience, no fitness level and no excuse is too small — everyone starts somewhere</li>
+          <li><strong>Three classes free.</strong> Your whole first week, no cost, no contract, no card details</li>
+          <li><strong>A genuinely fun, friendly crew.</strong> Most people say the people are the best part — you'll see why</li>
+        </ul>
+        <div class="trust-strip">
+          <span><span aria-hidden="true" style="color:var(--blue)">★★★★★</span> 4.8 on Google</span>
+          <span><span class="dot"></span>79+ reviews</span>
+          <span><span class="dot"></span>12 years coaching Perth</span>
+          <span><span class="dot"></span>Open 7 days</span>
+        </div>
       </div>
     </div>
   </section>
