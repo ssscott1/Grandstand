@@ -33,6 +33,13 @@
       .lp-hero { padding-top: 30px; }
       .lp-hero .lead { font-size: 1.05rem; }
     }
+    /* Scrolling quote marquee */
+    .marquee { overflow: hidden; width: 100%; -webkit-mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent); mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent); }
+    .marquee-track { display: flex; gap: 28px; width: max-content; animation: marquee-scroll 42s linear infinite; }
+    .marquee:hover .marquee-track, .marquee:focus-within .marquee-track { animation-play-state: paused; }
+    .marquee-track .quote { flex: 0 0 320px; width: 320px; }
+    @keyframes marquee-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+    @media (prefers-reduced-motion: reduce) { .marquee-track { animation: none; } }
   </style>
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-71964506-1"></script>
   <script>
@@ -223,37 +230,69 @@
         <span class="kicker">Word on the gym floor</span>
         <h2 class="tilt">Rated <span class="chalk">4.8 stars</span> on Google</h2>
       </div>
-      <div class="grid grid-3" style="margin-top:40px">
-        <blockquote class="quote">
-          <div class="stars" aria-hidden="true">★★★★★</div>
-          <p>"I've been to a bunch of CrossFit gyms over the years in various cities, and this has been my favourite. Knowledgeable coaches, good coach ratios, fun programming and a welcoming atmosphere."</p>
-          <footer>Mark S. · Google review</footer>
-        </blockquote>
-        <blockquote class="quote">
-          <div class="stars" aria-hidden="true">★★★★★</div>
-          <p>"Moved to Perth from overseas and tried a Friday night trial class at Grandstand — I was immediately hooked."</p>
-          <footer>Jess F. · Google review</footer>
-        </blockquote>
-        <blockquote class="quote">
-          <div class="stars" aria-hidden="true">★★★★★</div>
-          <p>"Very welcoming gym with friendly, excellent coaching staff. Easy to drop in and train with the Grandstand family."</p>
-          <footer>Nathan M. · Google review</footer>
-        </blockquote>
-        <blockquote class="quote">
-          <div class="stars" aria-hidden="true">★★★★★</div>
-          <p>"I was new to CrossFit training and a little nervous walking in, however the coaches are so amazingly supportive as soon as you arrive. In fact the whole class made me feel welcome. Now I'm a 3 year member!"</p>
-          <footer>Alice · Grandstand member</footer>
-        </blockquote>
-        <blockquote class="quote">
-          <div class="stars" aria-hidden="true">★★★★★</div>
-          <p>"I'd tried a couple of other CrossFit gyms before Grandstand and nothing compared. The coaching is next level and the community actually shows up for each other — I look forward to training every single day."</p>
-          <footer>Scott · Grandstand member</footer>
-        </blockquote>
-        <blockquote class="quote">
-          <div class="stars" aria-hidden="true">★★★★★</div>
-          <p>"I did my free trial not expecting much and ended up staying for the people as much as the workouts. Every class is different, every coach pushes you just the right amount, and I've never felt judged for being the slowest in the room."</p>
-          <footer>Jessie · Grandstand member</footer>
-        </blockquote>
+      <div class="marquee" style="margin-top:40px">
+        <div class="marquee-track">
+          <blockquote class="quote">
+            <div class="stars" aria-hidden="true">★★★★★</div>
+            <p>"I've been to a bunch of CrossFit gyms over the years in various cities, and this has been my favourite. Knowledgeable coaches, good coach ratios, fun programming and a welcoming atmosphere."</p>
+            <footer>Mark S. · Google review</footer>
+          </blockquote>
+          <blockquote class="quote">
+            <div class="stars" aria-hidden="true">★★★★★</div>
+            <p>"Moved to Perth from overseas and tried a Friday night trial class at Grandstand — I was immediately hooked."</p>
+            <footer>Jess F. · Google review</footer>
+          </blockquote>
+          <blockquote class="quote">
+            <div class="stars" aria-hidden="true">★★★★★</div>
+            <p>"Very welcoming gym with friendly, excellent coaching staff. Easy to drop in and train with the Grandstand family."</p>
+            <footer>Nathan M. · Google review</footer>
+          </blockquote>
+          <blockquote class="quote">
+            <div class="stars" aria-hidden="true">★★★★★</div>
+            <p>"I was new to CrossFit training and a little nervous walking in, however the coaches are so amazingly supportive as soon as you arrive. In fact the whole class made me feel welcome. Now I'm a 3 year member!"</p>
+            <footer>Alice · Grandstand member</footer>
+          </blockquote>
+          <blockquote class="quote">
+            <div class="stars" aria-hidden="true">★★★★★</div>
+            <p>"I'd tried a couple of other CrossFit gyms before Grandstand and nothing compared. The coaching is next level and the community actually shows up for each other — I look forward to training every single day."</p>
+            <footer>Scott · Grandstand member</footer>
+          </blockquote>
+          <blockquote class="quote">
+            <div class="stars" aria-hidden="true">★★★★★</div>
+            <p>"I did my free trial not expecting much and ended up staying for the people as much as the workouts. Every class is different, every coach pushes you just the right amount, and I've never felt judged for being the slowest in the room."</p>
+            <footer>Jessie · Grandstand member</footer>
+          </blockquote>
+          <blockquote class="quote" aria-hidden="true">
+            <div class="stars" aria-hidden="true">★★★★★</div>
+            <p>"I've been to a bunch of CrossFit gyms over the years in various cities, and this has been my favourite. Knowledgeable coaches, good coach ratios, fun programming and a welcoming atmosphere."</p>
+            <footer>Mark S. · Google review</footer>
+          </blockquote>
+          <blockquote class="quote" aria-hidden="true">
+            <div class="stars" aria-hidden="true">★★★★★</div>
+            <p>"Moved to Perth from overseas and tried a Friday night trial class at Grandstand — I was immediately hooked."</p>
+            <footer>Jess F. · Google review</footer>
+          </blockquote>
+          <blockquote class="quote" aria-hidden="true">
+            <div class="stars" aria-hidden="true">★★★★★</div>
+            <p>"Very welcoming gym with friendly, excellent coaching staff. Easy to drop in and train with the Grandstand family."</p>
+            <footer>Nathan M. · Google review</footer>
+          </blockquote>
+          <blockquote class="quote" aria-hidden="true">
+            <div class="stars" aria-hidden="true">★★★★★</div>
+            <p>"I was new to CrossFit training and a little nervous walking in, however the coaches are so amazingly supportive as soon as you arrive. In fact the whole class made me feel welcome. Now I'm a 3 year member!"</p>
+            <footer>Alice · Grandstand member</footer>
+          </blockquote>
+          <blockquote class="quote" aria-hidden="true">
+            <div class="stars" aria-hidden="true">★★★★★</div>
+            <p>"I'd tried a couple of other CrossFit gyms before Grandstand and nothing compared. The coaching is next level and the community actually shows up for each other — I look forward to training every single day."</p>
+            <footer>Scott · Grandstand member</footer>
+          </blockquote>
+          <blockquote class="quote" aria-hidden="true">
+            <div class="stars" aria-hidden="true">★★★★★</div>
+            <p>"I did my free trial not expecting much and ended up staying for the people as much as the workouts. Every class is different, every coach pushes you just the right amount, and I've never felt judged for being the slowest in the room."</p>
+            <footer>Jessie · Grandstand member</footer>
+          </blockquote>
+        </div>
       </div>
     </div>
   </section>
