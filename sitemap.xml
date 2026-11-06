@@ -55,20 +55,884 @@
     <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/"/>
   </url>
-  <url><loc>https://grandstandcrossfit.com.au/programs.html</loc><lastmod>2026-09-16</lastmod><priority>0.9</priority></url>
-  <url><loc>https://grandstandcrossfit.com.au/crossfit.html</loc><lastmod>2026-09-16</lastmod><priority>0.9</priority></url>
-  <url><loc>https://grandstandcrossfit.com.au/hyrox.html</loc><lastmod>2026-09-16</lastmod><priority>0.9</priority></url>
-  <url><loc>https://grandstandcrossfit.com.au/weightlifting.html</loc><lastmod>2026-09-16</lastmod><priority>0.9</priority></url>
-  <url><loc>https://grandstandcrossfit.com.au/gymnastics.html</loc><lastmod>2026-10-11</lastmod><priority>0.8</priority></url>
-  <url><loc>https://grandstandcrossfit.com.au/programming.html</loc><lastmod>2026-09-16</lastmod><priority>0.8</priority></url>
-  <url><loc>https://grandstandcrossfit.com.au/group-fitness.html</loc><lastmod>2026-09-16</lastmod><priority>0.8</priority></url>
-  <url><loc>https://grandstandcrossfit.com.au/open-gym.html</loc><lastmod>2026-09-16</lastmod><priority>0.8</priority></url>
-  <url><loc>https://grandstandcrossfit.com.au/personal-training.html</loc><lastmod>2026-09-16</lastmod><priority>0.7</priority></url>
-  <url><loc>https://grandstandcrossfit.com.au/kids.html</loc><lastmod>2026-09-16</lastmod><priority>0.7</priority></url>
-  <url><loc>https://grandstandcrossfit.com.au/timetable.html</loc><lastmod>2026-09-16</lastmod><priority>0.8</priority></url>
-  <url><loc>https://grandstandcrossfit.com.au/pricing.html</loc><lastmod>2026-09-16</lastmod><priority>0.9</priority></url>
-  <url><loc>https://grandstandcrossfit.com.au/drop-in.html</loc><lastmod>2026-10-08</lastmod><priority>0.8</priority></url>
-  <url><loc>https://grandstandcrossfit.com.au/about.html</loc><lastmod>2026-09-16</lastmod><priority>0.6</priority></url>
-  <url><loc>https://grandstandcrossfit.com.au/contact.html</loc><lastmod>2026-09-16</lastmod><priority>0.8</priority></url>
-  <url><loc>https://grandstandcrossfit.com.au/events.html</loc><lastmod>2026-10-06</lastmod><priority>0.5</priority></url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/programs.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/programs.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/programs.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/programs.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/programs.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/programs.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/programs.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/es/programs.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/programs.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/programs.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/programs.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/programs.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/programs.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/programs.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/fr/programs.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/programs.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/programs.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/programs.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/programs.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/programs.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/programs.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/it/programs.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/programs.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/programs.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/programs.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/programs.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/programs.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/programs.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/pt/programs.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/programs.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/programs.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/programs.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/programs.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/programs.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/programs.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/crossfit.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/crossfit.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/crossfit.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/crossfit.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/crossfit.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/crossfit.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/crossfit.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/es/crossfit.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/crossfit.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/crossfit.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/crossfit.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/crossfit.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/crossfit.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/crossfit.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/fr/crossfit.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/crossfit.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/crossfit.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/crossfit.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/crossfit.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/crossfit.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/crossfit.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/it/crossfit.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/crossfit.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/crossfit.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/crossfit.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/crossfit.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/crossfit.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/crossfit.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/pt/crossfit.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/crossfit.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/crossfit.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/crossfit.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/crossfit.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/crossfit.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/crossfit.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/hyrox.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/hyrox.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/hyrox.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/hyrox.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/hyrox.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/hyrox.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/hyrox.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/es/hyrox.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/hyrox.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/hyrox.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/hyrox.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/hyrox.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/hyrox.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/hyrox.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/fr/hyrox.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/hyrox.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/hyrox.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/hyrox.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/hyrox.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/hyrox.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/hyrox.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/it/hyrox.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/hyrox.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/hyrox.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/hyrox.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/hyrox.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/hyrox.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/hyrox.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/pt/hyrox.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/hyrox.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/hyrox.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/hyrox.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/hyrox.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/hyrox.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/hyrox.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/weightlifting.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/weightlifting.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/weightlifting.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/weightlifting.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/weightlifting.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/weightlifting.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/weightlifting.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/es/weightlifting.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/weightlifting.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/weightlifting.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/weightlifting.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/weightlifting.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/weightlifting.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/weightlifting.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/fr/weightlifting.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/weightlifting.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/weightlifting.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/weightlifting.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/weightlifting.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/weightlifting.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/weightlifting.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/it/weightlifting.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/weightlifting.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/weightlifting.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/weightlifting.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/weightlifting.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/weightlifting.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/weightlifting.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/pt/weightlifting.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/weightlifting.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/weightlifting.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/weightlifting.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/weightlifting.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/weightlifting.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/weightlifting.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/gymnastics.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/gymnastics.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/gymnastics.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/gymnastics.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/gymnastics.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/gymnastics.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/gymnastics.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/es/gymnastics.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/gymnastics.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/gymnastics.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/gymnastics.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/gymnastics.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/gymnastics.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/gymnastics.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/fr/gymnastics.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/gymnastics.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/gymnastics.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/gymnastics.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/gymnastics.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/gymnastics.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/gymnastics.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/it/gymnastics.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/gymnastics.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/gymnastics.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/gymnastics.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/gymnastics.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/gymnastics.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/gymnastics.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/pt/gymnastics.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/gymnastics.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/gymnastics.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/gymnastics.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/gymnastics.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/gymnastics.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/gymnastics.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/programming.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/programming.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/programming.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/programming.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/programming.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/programming.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/programming.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/es/programming.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/programming.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/programming.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/programming.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/programming.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/programming.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/programming.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/fr/programming.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/programming.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/programming.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/programming.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/programming.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/programming.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/programming.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/it/programming.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/programming.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/programming.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/programming.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/programming.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/programming.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/programming.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/pt/programming.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/programming.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/programming.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/programming.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/programming.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/programming.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/programming.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/group-fitness.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/group-fitness.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/group-fitness.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/group-fitness.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/group-fitness.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/group-fitness.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/group-fitness.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/es/group-fitness.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/group-fitness.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/group-fitness.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/group-fitness.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/group-fitness.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/group-fitness.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/group-fitness.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/fr/group-fitness.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/group-fitness.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/group-fitness.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/group-fitness.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/group-fitness.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/group-fitness.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/group-fitness.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/it/group-fitness.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/group-fitness.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/group-fitness.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/group-fitness.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/group-fitness.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/group-fitness.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/group-fitness.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/pt/group-fitness.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/group-fitness.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/group-fitness.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/group-fitness.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/group-fitness.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/group-fitness.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/group-fitness.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/open-gym.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/open-gym.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/open-gym.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/open-gym.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/open-gym.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/open-gym.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/open-gym.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/es/open-gym.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/open-gym.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/open-gym.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/open-gym.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/open-gym.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/open-gym.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/open-gym.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/fr/open-gym.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/open-gym.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/open-gym.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/open-gym.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/open-gym.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/open-gym.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/open-gym.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/it/open-gym.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/open-gym.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/open-gym.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/open-gym.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/open-gym.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/open-gym.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/open-gym.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/pt/open-gym.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/open-gym.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/open-gym.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/open-gym.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/open-gym.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/open-gym.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/open-gym.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/personal-training.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/personal-training.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/personal-training.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/personal-training.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/personal-training.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/personal-training.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/personal-training.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/es/personal-training.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/personal-training.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/personal-training.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/personal-training.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/personal-training.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/personal-training.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/personal-training.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/fr/personal-training.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/personal-training.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/personal-training.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/personal-training.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/personal-training.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/personal-training.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/personal-training.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/it/personal-training.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/personal-training.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/personal-training.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/personal-training.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/personal-training.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/personal-training.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/personal-training.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/pt/personal-training.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/personal-training.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/personal-training.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/personal-training.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/personal-training.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/personal-training.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/personal-training.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/kids.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/kids.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/kids.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/kids.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/kids.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/kids.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/kids.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/es/kids.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/kids.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/kids.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/kids.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/kids.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/kids.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/kids.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/fr/kids.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/kids.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/kids.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/kids.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/kids.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/kids.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/kids.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/it/kids.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/kids.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/kids.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/kids.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/kids.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/kids.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/kids.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/pt/kids.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/kids.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/kids.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/kids.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/kids.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/kids.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/kids.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/timetable.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/timetable.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/timetable.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/timetable.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/timetable.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/timetable.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/timetable.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/es/timetable.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/timetable.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/timetable.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/timetable.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/timetable.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/timetable.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/timetable.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/fr/timetable.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/timetable.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/timetable.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/timetable.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/timetable.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/timetable.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/timetable.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/it/timetable.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/timetable.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/timetable.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/timetable.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/timetable.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/timetable.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/timetable.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/pt/timetable.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/timetable.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/timetable.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/timetable.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/timetable.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/timetable.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/timetable.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/pricing.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/pricing.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/es/pricing.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/pricing.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/fr/pricing.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/pricing.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/it/pricing.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/pricing.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/pt/pricing.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/pricing.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/drop-in.html</loc>
+    <lastmod>2026-10-08</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/drop-in.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/drop-in.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/drop-in.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/drop-in.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/drop-in.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/drop-in.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/es/drop-in.html</loc>
+    <lastmod>2026-10-08</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/drop-in.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/drop-in.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/drop-in.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/drop-in.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/drop-in.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/drop-in.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/fr/drop-in.html</loc>
+    <lastmod>2026-10-08</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/drop-in.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/drop-in.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/drop-in.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/drop-in.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/drop-in.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/drop-in.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/it/drop-in.html</loc>
+    <lastmod>2026-10-08</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/drop-in.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/drop-in.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/drop-in.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/drop-in.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/drop-in.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/drop-in.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/pt/drop-in.html</loc>
+    <lastmod>2026-10-08</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/drop-in.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/drop-in.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/drop-in.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/drop-in.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/drop-in.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/drop-in.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/about.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/about.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/about.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/about.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/about.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/about.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/es/about.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/about.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/about.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/about.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/about.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/about.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/fr/about.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/about.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/about.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/about.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/about.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/about.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/it/about.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/about.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/about.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/about.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/about.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/about.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/pt/about.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/about.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/about.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/about.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/about.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/about.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/contact.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/contact.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/es/contact.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/contact.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/fr/contact.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/contact.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/it/contact.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/contact.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/pt/contact.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/contact.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/events.html</loc>
+    <lastmod>2026-10-06</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/events.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/events.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/events.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/events.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/events.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/events.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/es/events.html</loc>
+    <lastmod>2026-10-06</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/events.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/events.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/events.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/events.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/events.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/events.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/fr/events.html</loc>
+    <lastmod>2026-10-06</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/events.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/events.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/events.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/events.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/events.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/events.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/it/events.html</loc>
+    <lastmod>2026-10-06</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/events.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/events.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/events.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/events.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/events.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/events.html"/>
+  </url>
+  <url>
+    <loc>https://grandstandcrossfit.com.au/pt/events.html</loc>
+    <lastmod>2026-10-06</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://grandstandcrossfit.com.au/events.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://grandstandcrossfit.com.au/es/events.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://grandstandcrossfit.com.au/fr/events.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://grandstandcrossfit.com.au/it/events.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://grandstandcrossfit.com.au/pt/events.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://grandstandcrossfit.com.au/events.html"/>
+  </url>
 </urlset>
